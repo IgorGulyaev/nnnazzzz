@@ -1,7 +1,8 @@
 
 /* ---------- Color Module Styles ----------- */
 
-#preview, 
+/*
+#preview,
 #preview-header {
   background-color: #2ba3d4;
   color: #ffffff;
@@ -34,4 +35,10 @@ a {
 #preview-footer {
   background-color: #252525;
   color: #dddddd;
+}*/
+
+.region-header-bg {
+  background: url("../images/header.png") no-repeat center center;
+  -webkit-background-size:cover;
+  background-size:cover;
 }

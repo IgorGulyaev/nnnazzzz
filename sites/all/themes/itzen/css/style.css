@@ -15,7 +15,7 @@ html {
   background-size: cover;
 }
 body {
-  background: none;
+  background: #140614;
   font-family: "lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #fff;
@@ -203,6 +203,21 @@ nav {
   border-bottom: 3px solid transparent;
 }
 /* END NAVIGATION */
+
+.text-extra-large {
+  color: #ffe51f;
+  font-size: 30px;
+}
+
+.block-title {
+  color: #706c70;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 /* HOME */
 #home {
   padding: 100px 0;

@@ -26,13 +26,15 @@ dependencies[] = jquery_update (>=2)
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/custom_style/custom_style.css
+;stylesheets[all][] = css/custom_style/custom_style.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Javascripts
 ;;;;;;;;;;;;;;;;;;;;;
 scripts[] = js/anchors_region_navigation.js
+scripts[] = js/jquery.appear.js
 
 ; Landing page theme settings
 ; --------------
