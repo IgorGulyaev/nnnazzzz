@@ -466,8 +466,6 @@ a.btn:hover {
 /* END SERVICES */
 /* PORTFOLIO */
 #portfolio {
-  background: #fff;
-  color: #000;
 }
 #portfolio #first-time {
   display: none;
