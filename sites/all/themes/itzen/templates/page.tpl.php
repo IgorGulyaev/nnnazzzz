@@ -83,6 +83,11 @@
       </button>
       <a class="navbar-brand" href="#">sfdev</a>
   </div>
+	<?php if ($logo): ?>
+        <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Zen'); ?>">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Zen'); ?>" />
+        </a>
+	<?php endif; ?>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
   <div class="collapse navbar-collapse" id="navbar">
