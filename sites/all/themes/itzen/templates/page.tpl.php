@@ -75,38 +75,54 @@
 ?>
 <header id="<?php echo theme_get_setting('region_anchor-header') ?>" class="region-header-bg">
 <nav class="navbar" role="navigation">         
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="fa fa-bars"></span> 
-      </button>
-      <a class="navbar-brand" href="#">sfdev</a>
+  <div class="container">
+		<div class="row">
+            <div class="row-height">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header visible-xs">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">sfdev</a>
+                </div>
+                <?php if ($logo): ?>
+                    <a class="logo navbar-btn col-height col-xs-6 col-sm-2" href="<?php print $front_page; ?>" title="<?php print t('Zen'); ?>">
+                        <img class="text-left" src="<?php print $logo; ?>" alt="<?php print t('Zen'); ?>" />
+                    </a>
+                <?php endif; ?>
+                <div class="header-toll col-height col-xs-6 col-sm-4">
+                    <div class="inner-block">
+                        <a href="tel:18884146654" class="toll-tel"><span><i class="icon-zen_contact_phone"></i> 1 888 </span>414 6654</a>
+                        <span class="toll-country"><?php print t('USA/Canada'); ?></span>
+                        <span class="toll-label"><?php print t('Toll Free'); ?></span>
+                    </div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+                    <div class="collapse navbar-collapse col-sm-height col-xs-12 col-sm-6" id="navbar">
+                        <?php if (!empty($primary_nav)): ?>
+                            <?php print render($primary_nav); ?>
+                        <?php endif; ?>
+                        <?php if (!empty($secondary_nav)): ?>
+                            <?php print render($secondary_nav); ?>
+                        <?php endif; ?>
+                        <?php if (!empty($page['navigation'])): ?>
+                            <?php print render($page['navigation']); ?>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
   </div>
-	<?php if ($logo): ?>
-        <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Zen'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Zen'); ?>" />
-        </a>
-	<?php endif; ?>
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-  <div class="collapse navbar-collapse" id="navbar">
-      <?php if (!empty($primary_nav)): ?>
-        <?php print render($primary_nav); ?>
-      <?php endif; ?>
-      <?php if (!empty($secondary_nav)): ?>
-        <?php print render($secondary_nav); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['navigation'])): ?>
-        <?php print render($page['navigation']); ?>
-      <?php endif; ?>
-  </div>
-  <?php endif; ?>
 </nav>
 <section id="<?php echo theme_get_setting('region_anchor-home') ?>" class="region-home-bg">
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-12">
+                <?php if (!empty($site_name)): ?>
+                    <h1 class="site-name"><?php print $site_name; ?> </h1>
+                <?php endif; ?>
                 <?php if (!empty($site_slogan)): ?>
                   <p class="text-extra-large"><?php print $site_slogan; ?> </p>
                 <?php endif; ?>

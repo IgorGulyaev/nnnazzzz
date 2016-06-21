@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?nrgn6y');
+    src:    url('fonts/icomoon.eot?nrgn6y#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?nrgn6y') format('truetype'),
+        url('fonts/icomoon.woff?nrgn6y') format('woff'),
+        url('fonts/icomoon.svg?nrgn6y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zen_contact_mail:before {
+    content: "\e900";
+}
+.icon-zen_contact_phone:before {
+    content: "\e901";
+}
+.icon-zen_contact_pin:before {
+    content: "\e902";
+}
+.icon-zen_contact_skype:before {
+    content: "\e903";
+}
+.icon-zen_icon_action:before {
+    content: "\e904";
+}
+.icon-zen_icon_android:before {
+    content: "\e905";
+}
+.icon-zen_icon_apple:before {
+    content: "\e906";
+}
+.icon-zen_icon_blog:before {
+    content: "\e907";
+}
+.icon-zen_icon_cart:before {
+    content: "\e908";
+}
+.icon-zen_icon_catalogue:before {
+    content: "\e909";
+}
+.icon-zen_icon_check:before {
+    content: "\e90a";
+}
+.icon-zen_icon_filters:before {
+    content: "\e90b";
+}
+.icon-zen_icon_news:before {
+    content: "\e90c";
+}
+.icon-zen_icon_storytelling:before {
+    content: "\e90d";
+}
+.icon-zen_icon_subscription:before {
+    content: "\e90e";
+}
+.icon-zen_icon_windows:before {
+    content: "\e90f";
+}
+.icon-zen_icon_wow:before {
+    content: "\e910";
+}
+.icon-zen_load_brief:before {
+    content: "\e911";
+}
+.icon-zen_load_presrntation:before {
+    content: "\e912";
+}
+.icon-zen_navigation_arrow_left:before {
+    content: "\e913";
+}
+.icon-zen_navigation_arrow_right:before {
+    content: "\e914";
+}
+.icon-zen_navigation_chat:before {
+    content: "\e915";
+}
+.icon-zen_navigation_close:before {
+    content: "\e916";
+}
+.icon-zen_navigation_close_small:before {
+    content: "\e917";
+}
+.icon-zen_navigation_dropdown_down:before {
+    content: "\e918";
+}
+.icon-zen_navigation_dropdown_up:before {
+    content: "\e919";
+}
+.icon-zen_navigation_link:before {
+    content: "\e91a";
+}
+.icon-zen_navigation_show:before {
+    content: "\e91b";
+}
+.icon-zen_service_ecommerce:before {
+    content: "\e91c";
+}
+.icon-zen_service_mobile:before {
+    content: "\e91d";
+}
+.icon-zen_service_portals:before {
+    content: "\e91e";
+}
+.icon-zen_service_promo:before {
+    content: "\e91f";
+}
+.icon-zen_social_behance:before {
+    content: "\e920";
+}
+.icon-zen_social_facebook:before {
+    content: "\e921";
+}
+.icon-zen_social_linkedin:before {
+    content: "\e922";
+}
+
