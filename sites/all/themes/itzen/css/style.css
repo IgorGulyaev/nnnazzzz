@@ -923,6 +923,67 @@ footer a {
 /* END CUSTOM */
 
 
+/* COLORBOX */
+#cboxOverlay {
+  background: none !important;
+}
+#colorbox {
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-color: rgba(15,8,18,.98) !important;
+}
+#cboxContent,
+#cboxWrapper {
+  height: 100% !important;
+  width: 100% !important;
+  background: none !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+#cboxLoadedContent {
+  height: 100vw !important;
+  width: 100% !important;
+}
+#cboxClose {
+  top: 60px !important;
+  right: 60px !important;
+  bottom: auto !important;
+  height: 29px !important;
+  width: 29px !important;
+  background: none !important;
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: transparent;
+  font-size: 1px;
+  text-indent: 0;
+}
+#cboxClose:before {
+  content: "\e916";
+  color: #fff;
+  font-size: 30px;
+}
+#cboxTopCenter,
+#cboxTopRight,
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxBottomLeft,
+#cboxBottomCenter,
+#cboxBottomRight,
+#cboxTopLeft {
+  display: none !important;
+}
+/* END COLORBOX */
+
 /* MEDIA QUERIES */
 @media (max-width: 767px) {
   .navbar-brand {
