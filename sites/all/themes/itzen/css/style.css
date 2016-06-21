@@ -780,6 +780,7 @@ footer a {
   position: relative;
 }
 .view-projects.view-display-id-block .views-field-field-project-thumbnail {
+  position: relative;
   overflow: hidden;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -790,7 +791,29 @@ footer a {
 .view-projects.view-display-id-block .views-row:hover .views-field-field-project-thumbnail {
   border-radius: 50%;
 }
-.view-projects.view-display-id-block .views-field-nid {
+.view-projects.view-display-id-block .views-row .views-field-field-project-thumbnail:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #ffe71e;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.view-projects.view-display-id-block .views-row:hover .views-field-field-project-thumbnail:after {
+  opacity: .75;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.view-projects.view-display-id-block .project-box {
   display: none;
   height: 100%;
   padding: 23% 0;
@@ -800,14 +823,14 @@ footer a {
   top: 0;
   width: 100%;
 }
-.view-projects.view-display-id-block .views-row:hover .views-field-nid {display: block;}
-.view-projects.view-display-id-block h4 {
+.view-projects.view-display-id-block .views-row:hover .project-box {display: block;}
+.view-projects.view-display-id-block .views-field-title {
   margin: 10px 0;
   color: #290e26;
   font-weight: bold;
   text-transform: uppercase;
 }
-.view-projects.view-display-id-block .project-type {
+.view-projects.view-display-id-block .views-field-field-project-type {
   color: #290e26;
   font-size: 14px;
 }
@@ -815,7 +838,10 @@ footer a {
   margin: 50px 0;
   text-align: center;
 }
-.view-projects.view-display-id-block .project-links span {
+.view-projects.view-display-id-block .project-links .views-field {
+  display: inline-block;
+}
+.view-projects.view-display-id-block .project-links .field-content {
   display: inline-block;
   background-color: #290e26;
   margin: 0 10px;
@@ -823,8 +849,20 @@ footer a {
   width: 50px;
   border-radius: 50%;
   color: #fff;
+  font-size: 28px;
   text-align: center;
-  line-height: 50px;
+  line-height: 48px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.view-projects.view-display-id-block .project-links .field-content:hover {
+  background-color: #198eff;
+}
+.view-projects.view-display-id-block .project-links .field-content:hover a {
+  color: #fff;
 }
 .view-projects.view-display-id-block {}
 /* END CUSTOM */
