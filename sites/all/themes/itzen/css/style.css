@@ -835,12 +835,13 @@ footer a {
 .view-projects.view-display-id-block .views-row:hover .project-box {display: block;}
 .view-projects.view-display-id-block .views-field-title {
   margin: 10px 0;
-  color: #290e26;
+  color: #381024;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
 .view-projects.view-display-id-block .views-field-field-project-type {
-  color: #290e26;
+  color: #381024;
   font-size: 14px;
 }
 .view-projects.view-display-id-block .project-links {
@@ -852,7 +853,7 @@ footer a {
 }
 .view-projects.view-display-id-block .project-links .field-content {
   display: inline-block;
-  background-color: #290e26;
+  background-color: #381024;
   margin: 0 10px;
   height: 50px;
   width: 50px;
