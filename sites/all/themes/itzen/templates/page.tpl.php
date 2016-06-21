@@ -126,6 +126,16 @@
                 <?php if (!empty($site_slogan)): ?>
                   <p class="text-extra-large"><?php print $site_slogan; ?> </p>
                 <?php endif; ?>
+                <div class="home-info">
+                    <?php print t('web'); ?>
+                    <span>•</span>
+                    <?php print t('mobile'); ?>
+                    <span>•</span>
+                    <?php print t('seo'); ?>
+                </div>
+                <div class="link">
+                    <a href="#prefix" class="btn"><?php print t('Portfolio'); ?></a>
+                </div>
             </div>
         </div>
     </div> 

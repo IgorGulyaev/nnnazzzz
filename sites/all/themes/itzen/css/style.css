@@ -406,7 +406,51 @@ nav .logo {
 #home p.text-extra-large {
   margin-bottom: 60px;
 }
+.home-info {
+  margin: 17px 0 100px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.home-info span {
+  padding: 0 40px;
+  vertical-align: middle;
+  color: #ffe71e;
+  font-size: 30px;
+}
+.link {}
+a.btn {
+  display: inline-block;
+  height: 60px;
+  padding: 0 75px;
+  background-color: #ffe71e;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #381024;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 60px;
+  text-transform: uppercase;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+a.btn:hover {
+  background-color: #198eff;
+  color: #fff;
+  -webkit-box-shadow: 0 3px 5px 0 black;
+  -moz-box-shadow: 0 3px 5px 0 black;
+  box-shadow: 0 3px 5px 0 black;
+}
 /* END HOME */
+
 /* SERVICES */
 #services {
   background: #3dc0f1;
