@@ -185,6 +185,9 @@ h1.site-name {
   font-weight: 300;
   text-align: center;
 }
+.link {
+  text-align: center;
+}
 section {
   padding: 120px 0;
 }
