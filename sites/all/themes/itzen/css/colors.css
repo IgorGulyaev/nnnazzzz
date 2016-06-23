@@ -38,7 +38,9 @@ a {
 }*/
 
 .region-header-bg {
-  background: url("../images/header.png") no-repeat center center;
+  /*background: url("../images/header.png") no-repeat center center;*/
+  /*background: url("https://images4.alphacoders.com/265/265344.jpg") no-repeat center center;*/
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/3e/eb/c5/3eebc5022416c77e7cae8b77c876018f.gif") no-repeat center center;
   -webkit-background-size:cover;
   background-size:cover;
 }
