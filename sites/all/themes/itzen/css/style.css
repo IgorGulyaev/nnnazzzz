@@ -464,6 +464,8 @@ a.btn:hover {
 
 /* SERVICES */
 .view-services.view-display-id-block .view-content {
+  position: relative;
+  overflow: hidden;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -511,8 +513,10 @@ a.btn:hover {
   font-size: 15px;
   opacity: 0.3;
 }
-.view-services.view-display-id-block .views-row .views-field-field-service-option {}
-.view-services.view-display-id-block {}
+.view-services.view-display-id-block .view-footer {
+  clear: both;
+  margin-top: 70px;
+}
 
 #services {
   background: #3dc0f1;
