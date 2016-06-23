@@ -178,6 +178,13 @@ h1.site-name {
   font-size: 52px;
   line-height: 64px;
 }
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+}
 section {
   padding: 120px 0;
 }
@@ -453,6 +460,57 @@ a.btn:hover {
 /* END HOME */
 
 /* SERVICES */
+.view-services.view-display-id-block .view-content {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.view-services.view-display-id-block .views-row {
+  text-align: center;
+}
+.view-services.view-display-id-block .views-row .service-icon {
+  color: #ffe71e;
+  font-size: 75px;
+}
+.view-services.view-display-id-block .views-row .views-field-title {
+  font-size: 30px;
+}
+.view-services.view-display-id-block .views-row .views-field-field-service-small-icon ul {
+  padding: 0;
+  margin: 35px 0 39px;
+  text-align: center;
+}
+.view-services.view-display-id-block .views-row .views-field-field-service-small-icon ul li {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+.view-services.view-display-id-block .views-row .views-field-field-service-small-icon ul li .service-small-icon {
+  display: inline-block;
+  margin: 0 8px;
+  height: 44px;
+  width: 44px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.06);
+  color: #ffe71e;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+}
+.view-services.view-display-id-block .views-row .views-field-field-service-option ul {
+  padding: 0;
+  text-align: center;
+}
+.view-services.view-display-id-block .views-row .views-field-field-service-option ul li {
+  margin-bottom: 3px;
+  list-style: none;
+  font-size: 15px;
+  opacity: 0.3;
+}
+.view-services.view-display-id-block .views-row .views-field-field-service-option {}
+.view-services.view-display-id-block {}
+
 #services {
   background: #3dc0f1;
   background: rgba(61, 192, 241, 0.75);
