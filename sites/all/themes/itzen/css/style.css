@@ -758,6 +758,9 @@ a.btn:hover {
   line-height: 38px;
   text-align: center;
 }
+.view-meet-our-team.view-display-id-block .ms-slide:not(.ms-sl-selected) {
+
+}
 .view-meet-our-team.view-display-id-block {
   margin-top: 88px;
 }
