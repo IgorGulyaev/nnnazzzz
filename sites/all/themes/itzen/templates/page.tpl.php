@@ -148,14 +148,14 @@
 </header>
 
 <?php if($page["highlighted"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-highlighted') ?>" class="region-highlighted-bg">
+<section id="<?php echo theme_get_setting('region_anchor-highlighted') ?>" class="region-highlighted-bg wow fadeInUp">
     <div class="container">
         <?php print render($page['highlighted']); ?>
     </div>
 </section>
 <?php endif;?>
 
-<div id="<?php echo theme_get_setting('region_anchor-help') ?>" class="region-help-bg">
+<div id="<?php echo theme_get_setting('region_anchor-help') ?>" class="region-help-bg wow fadeInUp">
     <div class="container">
         <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
         <a id="main-content"></a>
@@ -173,7 +173,7 @@
 </div>
 
 <?php if($page["prefix"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-prefix') ?>" class="region-prefix-bg">
+<section id="<?php echo theme_get_setting('region_anchor-prefix') ?>" class="region-prefix-bg wow fadeInUp">
     <div class="container">
         <?php print render($page['prefix']); ?>
     </div>
@@ -181,7 +181,7 @@
 <?php endif;?>
 
 <?php if($page["suffix"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-suffix') ?>" class="region-suffix-bg">
+<section id="<?php echo theme_get_setting('region_anchor-suffix') ?>" class="region-suffix-bg wow fadeInUp">
     <div class="container">
         <?php print render($page['suffix']); ?>
     </div>
@@ -189,7 +189,7 @@
 <?php endif;?>
 
 <?php if($page["featured"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-featured') ?>" class="region-featured-bg">
+<section id="<?php echo theme_get_setting('region_anchor-featured') ?>" class="region-featured-bg wow fadeInUp">
     <div class="container">
         <?php print render($page['featured']); ?>
     </div>
@@ -197,7 +197,7 @@
 <?php endif;?>
 
 <?php if($page["footer"]): ?>
-<footer id="<?php echo theme_get_setting('region_anchor-footer') ?>" class="region-footer-bg">
+<footer id="<?php echo theme_get_setting('region_anchor-footer') ?>" class="region-footer-bg wow fadeInUp">
   <div class="container text-center">
     <div class="row">
       <?php print render($page['footer']); ?>

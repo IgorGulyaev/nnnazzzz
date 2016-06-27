@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+    new WOW().init();
+
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
     var portSlider = new MasterSlider();
     var portSlideWidth = $(window).width();
