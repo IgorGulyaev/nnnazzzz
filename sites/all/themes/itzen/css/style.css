@@ -711,12 +711,15 @@ a.btn:hover {
 }
 .statistic {}
 
+.view-team.view-display-id-block .left-member,
 .view-meet-our-team.view-display-id-block .left-member {
   padding-right: 48px;
 }
+.view-team.view-display-id-block .right-member,
 .view-meet-our-team.view-display-id-block .right-member {
   padding-left: 48px;
 }
+.view-team.view-display-id-block .views-field-field-team-photo img,
 .view-meet-our-team.view-display-id-block .views-field-field-member-photo img {
   display: inline-block;
   border: 2px solid #0c0318;
@@ -724,26 +727,30 @@ a.btn:hover {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+.view-team.view-display-id-block .views-field-name,
 .view-meet-our-team.view-display-id-block .views-field-title {
   margin-bottom: 11px;
   font-size: 30px;
 }
+.view-team.view-display-id-block .views-field-field-team-occupation,
 .view-meet-our-team.view-display-id-block .views-field-field-occupation {
   margin-bottom: 37px;
   color: #ffe71e;
   font-size: 16px;
 }
+.view-team.view-display-id-block .views-field-description,
 .view-meet-our-team.view-display-id-block .views-field-body {
   margin-bottom: 48px;
   width: 60%;
   font-size: 16px;
   opacity: 0.3;
 }
-.view-meet-our-team.view-display-id-block .views-field-field-member-social {}
+.view-team.view-display-id-block .views-field-field-team-social li,
 .view-meet-our-team.view-display-id-block .views-field-field-member-social li {
   display: inline-block;
   vertical-align: middle;
 }
+.view-team.view-display-id-block .views-field-field-team-social li a,
 .view-meet-our-team.view-display-id-block .views-field-field-member-social li a {
   display: inline-block;
   margin: 0 8px;
@@ -761,6 +768,7 @@ a.btn:hover {
 .view-meet-our-team.view-display-id-block .ms-slide:not(.ms-sl-selected) {
 
 }
+.view-team.view-display-id-block,
 .view-meet-our-team.view-display-id-block {
   margin-top: 88px;
 }

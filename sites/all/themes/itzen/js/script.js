@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    $('.view-meet-our-team .view-content').addClass('master-slider').attr('id', 'team_slider');
+    $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
     var portSlider = new MasterSlider();
     var portSlideWidth = $(window).width();
     portSlider.setup('team_slider' , {
