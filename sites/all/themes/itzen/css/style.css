@@ -541,6 +541,7 @@ a.btn:hover {
 /* END SERVICES */
 
 /* HOW WE WORK */
+.view-how-we-work-tabs .views-field-title,
 .view-how-we-work .views-field-title {
   margin-top: 40px;
   margin-bottom: 45px;
@@ -549,39 +550,49 @@ a.btn:hover {
   font-weight: 300;
   text-align: center;
 }
+.view-how-we-work-tabs .views-field-body,
 .view-how-we-work .views-field-body {
   margin-bottom: 68px;
   opacity: .3;
   font-size: 16px;
 }
+.view-how-we-work-tabs .steps-block .field-collection-container,
 .view-how-we-work .steps-block .field-collection-container {
   border: none;
 }
+.view-how-we-work-tabs .steps-block .field-item,
 .view-how-we-work .steps-block .field-item {
   margin-bottom: 0;
 }
+.view-how-we-work-tabs .steps-block .field-collection-view,
 .view-how-we-work .steps-block .field-collection-view {
   padding: 0;
   margin: 0 0 30px;
   border: none;
 }
+.view-how-we-work-tabs .steps-block .field-name-field-soft-icon,
+.view-how-we-work-tabs .steps-block .field-name-field-soft-name,
 .view-how-we-work .steps-block .field-name-field-soft-icon,
 .view-how-we-work .steps-block .field-name-field-soft-name {
   display: inline-block;
   vertical-align: middle;
 }
+.view-how-we-work-tabs .steps-block .field-name-field-soft-icon,
 .view-how-we-work .steps-block .field-name-field-soft-icon {
   margin-right: 20px;
 }
+.view-how-we-work-tabs .steps-block .field-name-field-soft-name,
 .view-how-we-work .steps-block .field-name-field-soft-name {
   font-size: 15px;
 }
+.view-how-we-work-tabs .steps-block .field-name-field-soft-step-info .field-item,
 .view-how-we-work .steps-block .field-name-field-soft-step-info .field-item {
   position: relative;
   padding-left: 35px;
   min-width: 270px;
   width: 50%;
 }
+.view-how-we-work-tabs .steps-block .field-name-field-soft-step-info .field-item:before,
 .view-how-we-work .steps-block .field-name-field-soft-step-info .field-item:before {
   position: absolute;
   height: 100%;
@@ -603,28 +614,36 @@ a.btn:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.view-how-we-work-tabs .steps-block,
 .view-how-we-work .steps-block {}
+.view-how-we-work-tabs .performancers-block .taxonomy-term,
 .view-how-we-work .performancers-block .taxonomy-term {
   margin-bottom: 30px;
 }
+.view-how-we-work-tabs .performancers-block h2,
 .view-how-we-work .performancers-block h2 {
   display: none;
 }
+.view-how-we-work-tabs .performancers-block .content,
 .view-how-we-work .performancers-block .content {
   overflow: hidden;
 }
+.view-how-we-work-tabs .performancers-block img,
 .view-how-we-work .performancers-block img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+.view-how-we-work-tabs .performancers-block .field-name-field-showed-name,
 .view-how-we-work .performancers-block .field-name-field-showed-name {
   font-size: 15px;
 }
+.view-how-we-work-tabs .performancers-block .field-name-field-team-occupation,
 .view-how-we-work .performancers-block .field-name-field-team-occupation {
   opacity: .3;
   font-size: 11px;
 }
+.view-how-we-work-tabs,
 .view-how-we-work {}
 /* END HOW WE WORK */
 
