@@ -550,6 +550,8 @@ a.btn:hover {
 
 /* HOW WE WORK */
 .view-how-we-work-tabs .nav {
+  margin: 0 auto;
+  width: 80%;
   border: none;
 }
 .view-how-we-work-tabs .nav > li {
