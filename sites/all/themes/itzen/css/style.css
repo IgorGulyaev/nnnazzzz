@@ -562,7 +562,8 @@ a.btn:hover {
 }
 .view-how-we-work .steps-block .field-collection-view {
   padding: 0;
-  margin: 0;
+  margin: 0 0 30px;
+  bottom: 0;
 }
 .view-how-we-work .steps-block .field-name-field-soft-icon,
 .view-how-we-work .steps-block .field-name-field-soft-name {
