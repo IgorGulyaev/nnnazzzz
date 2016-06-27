@@ -147,6 +147,14 @@ body {
   font-size: 14px;
   color: #fff;
 }
+#content {
+  display: none !important;
+}
+body.page-user #content,
+body.logged-in #content,
+body.admin-menu #content {
+  display: block !important;
+}
 h1,
 h2,
 h3,
