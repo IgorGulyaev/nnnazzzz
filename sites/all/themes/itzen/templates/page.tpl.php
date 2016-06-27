@@ -180,14 +180,6 @@
 </section>
 <?php endif;?>
 
-<?php if($page["content"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-content') ?>" class="region-content-bg">
-    <div class="container">
-        <?php print render($page['content']); ?>
-    </div>
-</section>
-<?php endif;?>
-
 <?php if($page["suffix"]): ?>
 <section id="<?php echo theme_get_setting('region_anchor-suffix') ?>" class="region-suffix-bg">
     <div class="container">
