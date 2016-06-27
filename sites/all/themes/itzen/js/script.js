@@ -2,6 +2,12 @@ jQuery(document).ready(function ($) {
 
     new WOW().init();
 
+    $('.view-how-we-work-tabs .nav > li').each(function () {
+        var labelNumber = $(this).index() + 1;
+        var labelItem = '<span class="label-number">' + labelNumber + '</span>';
+        $(this).find('a').append(labelItem);
+    });
+
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
     var portSlider = new MasterSlider();
     var portSlideWidth = $(window).width();

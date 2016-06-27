@@ -549,6 +549,74 @@ a.btn:hover {
 /* END SERVICES */
 
 /* HOW WE WORK */
+.view-how-we-work-tabs .nav {
+  border: none;
+}
+.view-how-we-work-tabs .nav > li {
+  position: relative;
+  text-align: center;
+}
+.view-how-we-work-tabs .nav > li > a {
+  position: static;
+  display: inline-block;
+  border: none !important;
+  background: none !important;
+  color: rgba(255,231,30,.2);
+  font-size: 20px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.view-how-we-work-tabs .nav > li.active > a {
+  color: rgba(255,231,30,1);
+}
+.view-how-we-work-tabs .nav > li .label-number {
+  display: block;
+  margin: 12px auto 0;
+  height: 50px;
+  width: 50px;
+  border: 1px dashed rgba(255,231,30,.2);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffe71e;
+  font-weight: bold;
+  line-height: 46px;
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.view-how-we-work-tabs .nav > li.active .label-number {
+  border-color: rgba(255,231,30,1);
+  background-color: #ffe71e;
+  color: #1f0a1f;
+}
+.view-how-we-work-tabs .nav > li:before,
+.view-how-we-work-tabs .nav > li:after {
+  position: absolute;
+  bottom: 34px;
+  display: block;
+  content: '';
+  border: 1px dashed rgba(255,231,30,.2);
+  width: calc(50% - 26px);
+}
+.view-how-we-work-tabs .nav > li:before {
+  right: calc(50% + 25px);
+}
+.view-how-we-work-tabs .nav > li:after {
+  left: calc(50% + 25px);
+}
+.view-how-we-work-tabs .nav > li:first-child:before,
+.view-how-we-work-tabs .nav > li:last-child:after {
+  display: none;
+}
+.view-how-we-work-tabs .nav {}
+
 .view-how-we-work-tabs .views-field-title,
 .view-how-we-work .views-field-title {
   margin-top: 40px;
