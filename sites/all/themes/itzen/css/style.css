@@ -126,6 +126,10 @@ Email: support@ztapps.com
 User Page: http://wrapbootstrap.com/user/realmckoy01
 */
 /* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
 a, body {
   color: #ffffff;
 }
@@ -296,6 +300,23 @@ section .text-large {
   -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(233, 102, 102, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(233, 102, 102, 0.6);
 }
+
+/* PANELS */
+.panel-default {
+  border: none;
+  background: none;
+}
+.panel-default > .panel-heading {
+  border: none;
+  background-color: rgba(255,255,255,.02);
+  color: #fff;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  background-color: rgba(255,255,255,.02);
+}
+/* END PANELS */
+
 /* END GENERAL */
 /* NAVIGATION */
 nav {
@@ -1402,6 +1423,9 @@ ul.social li a {
 
 
 /* COLORBOX */
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: border-box;
+}
 #cboxOverlay {
   background: none !important;
 }
@@ -1422,6 +1446,7 @@ ul.social li a {
   border-radius: 0 !important;
 }
 #cboxLoadedContent {
+  padding: 80px 100px;
   height: 100vw !important;
   width: 100% !important;
 }
