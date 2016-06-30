@@ -206,6 +206,9 @@ ul {
 li {
   list-style: none;
 }
+.node footer {
+  display: none !important;
+}
 section {
   padding: 120px 0;
 }
@@ -1421,6 +1424,20 @@ ul.social li a {
 
 /* END FOOTER */
 
+/* NODE PROJECT */
+.node-project header h2,
+.node-project .field-name-field-project-milestone-title {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  color: #ffe71e;
+  font-size: 50px;
+  font-weight: 300;
+}
+.node-project header h2 a {
+  color: #ffe71e;
+}
+.node-project {}
+/* END NODE PROJECT */
 
 /* COLORBOX */
 #colorbox, #cboxContent, #cboxLoadedContent {
@@ -1447,7 +1464,7 @@ ul.social li a {
 }
 #cboxLoadedContent {
   padding: 80px 100px;
-  height: 100vw !important;
+  height: 100vh !important;
   width: 100% !important;
 }
 #cboxClose {

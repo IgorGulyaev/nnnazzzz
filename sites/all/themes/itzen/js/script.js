@@ -1,3 +1,17 @@
+(function ($) {
+
+    Drupal.behaviors.initColorbox = {
+        attach: function (context, settings) {
+            if (!$.isFunction($.colorbox) || typeof settings.colorbox === 'undefined') {
+                return;
+            } else {
+                $('body').addClass('popup-open');
+            }
+        }
+    };
+
+})(jQuery);
+
 jQuery(document).ready(function ($) {
 
     new WOW().init();
