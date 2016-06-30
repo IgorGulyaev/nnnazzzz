@@ -1,0 +1,14 @@
+name = TinyMCE MCimagemanager
+description = Enables the Tinymce MCImageManager as an editor plugin.
+package = User interface
+core = 7.x
+version = "3.1.2.8"
+dependencies[] = wysiwyg
+dependencies[] = libraries
+
+; Information added by drupal.org packaging script on 2011-05-31
+version = "7.x-0.1"
+core = "7.x"
+project = "tinymce_mcimagemanager"
+datestamp = "1306844217"
+

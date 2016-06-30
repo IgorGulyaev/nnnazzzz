@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * hook_requirements
+ * Enter description here ...
+ * @param unknown_type $phase
+ */
+function tinymce_mcimagemanager_requirements($phase) {
+  if ($phase == 'runtime') {
+    $path = libraries_get_path('imagemanager');
+    
+    if(file_exists($path.'/editor_plugin.js')) {
+      $requirements['tinymce_mcimagemananger'] = array(
+        'title' => t('TinyMCE MCimagemanager'),
+        'value' => t('Library installed in '.$path),
+        'severity' => REQUIREMENT_OK,
+      ); 
+    } else {
+      
+      $requirements['tinymce_mcimagemananger'] = array(
+        'title' => t('TinyMCE MCimagemanager'),
+        'value' => t('Missing MCimagemananger library. Please install in '.$path),
+        'severity' => REQUIREMENT_ERROR,
+      ); 
+    }
+  }
+  
+  return $requirements; 
+}
