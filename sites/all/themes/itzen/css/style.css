@@ -749,6 +749,50 @@ a.btn:hover {
 .view-how-we-work {}
 /* END HOW WE WORK */
 
+/* WEBFORM */
+.node-webform {
+  margin: 0 auto;
+  max-width: 560px;
+}
+.node-webform header h2 {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  color: #ffe71e;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+}
+.node-webform header h2 a {
+  color: #ffe71e;
+}
+.node-webform header .submitted {
+  display: none !important;
+}
+.node-webform header {}
+.node-webform .field-name-field-weight {
+  display: none;
+}
+.node-webform .panel-body {
+  padding: 0;
+}
+.node-webform label {
+  opacity: 0.3;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.node-webform .form-control.form-text {
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+.node-webform {}
+/* END WEBFORM */
+
 /* PORTFOLIO */
 #portfolio {
 }
