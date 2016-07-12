@@ -572,6 +572,50 @@ a.btn:hover {
 }
 /* END SERVICES */
 
+/* PRICING */
+.view-pricing.view-display-id-page_1 .panel-body {
+  padding-right: 110px;
+  padding-bottom: 50px;
+  padding-left: 128px;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item {
+  margin-bottom: 25px;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item ul {
+  overflow: hidden;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item ul li {
+  float: left;
+  margin-bottom: 10px;
+  width: 33%;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item ul li:before {
+  display: inline-block;
+  content: '•';
+  margin-right: 3px;
+  color: #ffe71e;
+}
+.view-pricing.view-display-id-page_1 .views-field-body {
+  margin-bottom: 25px;
+  color: rgba(255,255,255,.3);
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-label {
+  margin-bottom: 25px;
+  color: #ffe71e;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.view-pricing.view-display-id-page_1 .views-field-nothing a {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+.view-pricing.view-display-id-page_1 .views-field-nothing i {
+  display: none !important;
+}
+.view-pricing.view-display-id-page_1 {}
+/* END PRICING */
+
 /* HOW WE WORK */
 .view-how-we-work-tabs .nav {
   margin: 0 auto;
