@@ -10,6 +10,23 @@
         }
     };
 
+    Drupal.behaviors.formElements = {
+        attach: function (context, settings) {
+            $('.form-item-submitted-contact-method-select-method input').change(function () {
+                $(this).attr('checked', 'checked').parent('label').attr('data-checked', 'checked');
+                $(this).parents('.form-item').siblings('.form-item').find('input').attr('checked', '').parent('label').attr('data-checked', '');
+            });
+            $('input[name*="submitted[contact_method]"]').focus(function () {
+                $('.webform-component--contact-method--select-method').fadeIn();
+            });
+            $('input[name*="submitted[contact_method]"]').blur(function () {
+                if ($(this).val() == '' && !$(this).parents('fieldset').is(':hover')) {
+                    $('.webform-component--contact-method--select-method').fadeOut();
+                }
+            });
+        }
+    };
+
 })(jQuery);
 
 jQuery(document).ready(function ($) {
