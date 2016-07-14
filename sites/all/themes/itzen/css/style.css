@@ -587,10 +587,75 @@ a.btn:hover {
 /* END SERVICES */
 
 /* PRICING */
-.view-pricing.view-display-id-page_1 .panel-body {
-  padding-right: 110px;
+.view-pricing.view-display-id-page_1 .view-header {
+  margin-bottom: 65px;
+}
+.view-pricing.view-display-id-page_1 .view-header .section-title {
+  color: #ffe71e;
+}
+.view-pricing.view-display-id-page_1 .view-header p {
+  margin-bottom: 15px;
+  color: rgba(255,255,255,.3);
+}
+.view-pricing.view-display-id-page_1 .views-row {
+  padding: 15px 110px 0 128px;
+  margin-bottom: 40px;
+  min-height: 75px;
+  border: none;
+  background-color: rgba(255,255,255,.02);
+  color: #fff;
+}
+.view-pricing.view-display-id-page_1 .views-row.active {
   padding-bottom: 50px;
-  padding-left: 128px;
+}
+.view-pricing.view-display-id-page_1 .fieldset-title {
+  position: relative;
+  margin-bottom: 33px;
+  float: left;
+  width: 100%;
+  cursor: pointer;
+}
+.view-pricing.view-display-id-page_1 .fieldset-title:after {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  display: block;
+  content: "\e918";
+  position: absolute;
+  top: 16px;
+  right: -50px;
+}
+.view-pricing.view-display-id-page_1 .active .fieldset-title:after {
+  content: "\e919";
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-icon {
+  position: absolute;
+  top: -22px;
+  left: -94px;
+  color: #ffe71e;
+  font-size: 55px;
+}
+.view-pricing.view-display-id-page_1 .views-field-title {
+  float: left;
+  font-size: 30px;
+  font-weight: 300;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-price {
+  float: right;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffe71e;
+}
+.view-pricing.view-display-id-page_1 .tab-content-block {
+  clear: both;
+  display: none;
 }
 .view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item {
   margin-bottom: 25px;
@@ -858,6 +923,7 @@ a.btn:hover {
 .node-webform .form-control.form-text:focus {
   padding-bottom: 20px;
   height: 44px;
+  border-color: #0758e3;
 }
 .webform-component--contact-method {
   position: relative;

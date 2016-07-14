@@ -12,6 +12,8 @@
 
     Drupal.behaviors.formElements = {
         attach: function (context, settings) {
+            var serviceName;
+
             $('.form-item-submitted-contact-method-select-method input').change(function () {
                 $(this).attr('checked', 'checked').parent('label').attr('data-checked', 'checked');
                 $(this).parents('.form-item').siblings('.form-item').find('input').attr('checked', '').parent('label').attr('data-checked', '');
@@ -23,6 +25,24 @@
                 if ($(this).val() == '' && !$(this).parents('fieldset').is(':hover')) {
                     $('.webform-component--contact-method--select-method').fadeOut();
                 }
+            });
+
+            $('.view-pricing.view-display-id-page_1 .fieldset-title').click(function () {
+                $(this).parent('.views-row').siblings().removeClass('active').find('.tab-content-block').slideUp();
+                if ($(this).hasClass('active') == true) {
+                    $(this).parent().removeClass('active');
+                    $(this).next().slideUp();
+                } else {
+                    $(this).parent().addClass('active');
+                    $(this).next().slideDown();
+                }
+            });
+
+            $('.view-pricing.view-display-id-page_1 .views-field-nothing a').click(function () {
+                serviceName = $(this).parents('.views-row').find('.views-field-title .field-content').text();
+            });
+            $('.node-webform').load(function () {
+                $('input[name="submitted[service_name]"]').attr('value', serviceName);
             });
         }
     };

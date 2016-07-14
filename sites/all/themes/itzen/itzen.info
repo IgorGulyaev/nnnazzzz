@@ -37,6 +37,7 @@ stylesheets[all][] = css/style.css
 ;;;;;;;;;;;;;;;;;;;;;
 scripts[] = js/anchors_region_navigation.js
 scripts[] = js/jquery.appear.js
+scripts[] = js/jquery.cookie.js
 scripts[] = js/masterslider/modernizr-custom.js
 scripts[] = js/masterslider/jquery.easing.min.js
 scripts[] = js/masterslider/masterslider.min.js
