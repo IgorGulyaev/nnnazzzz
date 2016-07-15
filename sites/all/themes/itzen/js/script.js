@@ -44,12 +44,12 @@
                     if ($('.node-webform')[0]) {
                         $('input[name="submitted[service_name]"]').attr('value', serviceName);
                         if ($('.service-choose')[0]) {
-                            if ($('.service-choose').text() == 'You are Interested in '+ serviceName +' Service<span><i class="icon-zen_navigation_close"></i></span>') {
+                            if ($('.service-choose .service-name').text() == serviceName) {
                             } else {
-                                $('.service-choose').text('You are Interested in '+ serviceName +' Service<span><i class="icon-zen_navigation_close"></i></span>');
+                                $('.service-choose .service-name').text(serviceName);
                             }
                         } else {
-                            $('.webform-client-form > div').prepend('<div class="service-choose">You are Interested in '+ serviceName +' Service<span><i class="icon-zen_navigation_close"></i></span></div>');
+                            $('.webform-client-form > div').prepend('<div class="service-choose">You are Interested in <span class="service-name">'+ serviceName +'</span> Service<span class="service-remove"><i class="icon-zen_navigation_close"></i></span></div>');
                         }
                     }
                 });
