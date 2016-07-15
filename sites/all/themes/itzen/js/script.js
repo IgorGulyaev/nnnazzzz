@@ -43,7 +43,9 @@
                 $(document).ajaxComplete(function(aj) {
                     if ($('.node-webform')[0]) {
                         $('input[name="submitted[service_name]"]').attr('value', serviceName);
-                        $('.webform-client-form > div').once().prepend('<div class="service-choose">You are Interested in '+ serviceName +' Service<span><i class="icon-zen_navigation_close"></i></span></div>');
+                        if (!service-choose.is()) {
+                            $('.webform-client-form > div').prepend('<div class="service-choose">You are Interested in '+ serviceName +' Service<span><i class="icon-zen_navigation_close"></i></span></div>');
+                        }
                     }
                 });
             });
