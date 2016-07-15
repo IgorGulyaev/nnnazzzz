@@ -1006,6 +1006,31 @@ a.btn:hover {
   font-weight: bold;
   font-size: 12px;
 }
+
+.webform-confirmation {
+  text-align: center;
+}
+.webform-confirmation .success-icon {
+  text-align: center;
+}
+.webform-confirmation .success-icon i {
+  color: #00ff2a;
+  font-size: 60px;
+}
+.webform-confirmation h3 {
+  color: #00ff2a;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.webform-confirmation .link {
+  background-color: #00ff2a;
+}
+.webform-confirmation p {
+  color: #fff;
+  opacity: 0.3;
+}
+.webform-confirmation {}
   /* END WEBFORM */
 
 /* PORTFOLIO */
