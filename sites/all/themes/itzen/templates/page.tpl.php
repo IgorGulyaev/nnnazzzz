@@ -87,11 +87,11 @@
                     <a class="navbar-brand" href="#">sfdev</a>
                 </div>
                 <?php if ($logo): ?>
-                    <a class="logo navbar-btn col-height col-xs-6 col-sm-2" href="<?php print $front_page; ?>" title="<?php print t('Zen'); ?>">
+                    <a class="logo navbar-btn col-height col-xs-6 col-sm-2 col-middle" href="<?php print $front_page; ?>" title="<?php print t('Zen'); ?>">
                         <img class="text-left" src="<?php print $logo; ?>" alt="<?php print t('Zen'); ?>" />
                     </a>
                 <?php endif; ?>
-                <div class="header-toll col-height col-xs-6 col-sm-4">
+                <div class="header-toll col-height col-xs-6 col-sm-4 col-middle">
                     <div class="inner-block">
                         <a href="tel:18884146654" class="toll-tel"><span><i class="icon-zen_contact_phone"></i> 1 888 </span>414 6654</a>
                         <span class="toll-country"><?php print t('USA/Canada'); ?></span>
@@ -100,7 +100,7 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-                    <div class="collapse navbar-collapse col-sm-height col-xs-12 col-sm-6" id="navbar">
+                    <div class="collapse navbar-collapse col-sm-height col-xs-12 col-sm-6 col-middle" id="navbar">
                         <?php if (!empty($primary_nav)): ?>
                             <?php print render($primary_nav); ?>
                         <?php endif; ?>
