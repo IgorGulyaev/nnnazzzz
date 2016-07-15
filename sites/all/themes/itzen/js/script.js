@@ -56,10 +56,18 @@
             });
 
             $('body').on('click', '.service-choose span', function () {
-                console.log('remove');
                 serviceName = '';
                 $('input[name="submitted[service_name]"]').attr('value', '');
                 $('.service-choose').fadeOut();
+            });
+            $('body').on('click', '.webform-confirmation .btn.link', function () {
+                $('#cboxClose').trigger('click');
+            });
+            $(document).ajaxComplete(function() {
+                if ($('.webform-confirmation')[0]) {
+                    $('.webform-confirmation').parents('.node').find('header').remove();
+                    $('.webform-confirmation').parents('.node').find('.links').remove();
+                }
             });
         }
     };
