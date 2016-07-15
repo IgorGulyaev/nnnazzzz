@@ -1015,7 +1015,7 @@ a.btn:hover {
 }
 .webform-confirmation .success-icon i {
   color: #00ff2a;
-  font-size: 60px;
+  font-size: 100px;
 }
 .webform-confirmation h3 {
   color: #00ff2a;
@@ -1026,7 +1026,8 @@ a.btn:hover {
 .webform-confirmation .link {
   background-color: #00ff2a;
 }
-.webform-confirmation p {
+.webform-confirmation h3 + p {
+  margin: 25px 0 75px;
   color: #fff;
   opacity: 0.3;
 }
