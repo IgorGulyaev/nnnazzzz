@@ -42,7 +42,6 @@
                 serviceName = $(this).parents('.views-row').find('.views-field-title .field-content').text();
                 $(document).ajaxComplete(function(aj) {
                     if ($('.node-webform')[0]) {
-                        $('.webform-submit').addClass('btn colorbox-node');
                         $('input[name="submitted[service_name]"]').attr('value', serviceName);
                         if ($('.service-choose')[0]) {
                             if ($('.service-choose .service-name').text() == serviceName) {
