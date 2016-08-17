@@ -569,8 +569,8 @@ a.btn:hover {
 .view-services.view-display-id-block .view-content {
   position: relative;
   overflow: hidden;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -15px !important;
+  margin-left: -15px !important;
 }
 .view-services.view-display-id-block .views-row {
   text-align: center;
@@ -820,6 +820,7 @@ a.btn:hover {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .view-how-we-work-tabs .views-field-title,
@@ -866,15 +867,13 @@ a.btn:hover {
 .view-how-we-work .steps-block .field-name-field-soft-name {
   font-size: 15px;
 }
-.view-how-we-work-tabs .steps-block .field-name-field-soft-step-info .field-item,
-.view-how-we-work .steps-block .field-name-field-soft-step-info .field-item {
+.view-how-we-work-tabs .field-name-field-soft-step-info .field-item {
   position: relative;
   padding-left: 35px;
   min-width: 270px;
   width: 50%;
 }
-.view-how-we-work-tabs .steps-block .field-name-field-soft-step-info .field-item:before,
-.view-how-we-work .steps-block .field-name-field-soft-step-info .field-item:before {
+.view-how-we-work-tabs .field-name-field-soft-step-info .field-item:before {
   position: absolute;
   height: 100%;
   top: 50%;
@@ -1324,6 +1323,39 @@ a.btn:hover {
 .view-meet-our-team.view-display-id-block {
   margin-top: 88px;
 }
+
+.ms-nav-prev,
+.ms-nav-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -36px;
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  font-size: 36px;
+  opacity: 0.2;
+}
+
+.ms-nav-prev {
+  left: -10px;
+}
+.ms-nav-next {
+  right: -10px;
+}
+.ms-nav-prev:before {
+  content: "\e914";
+}
+.ms-nav-next:before {
+  content: "\e913";
+}
+
 /* END MEMBERS VIEW */
 
 /* ABOUT */
@@ -1654,7 +1686,10 @@ footer a {
 .view-projects.view-display-id-block .project-links .field-content:hover a {
   color: #fff;
 }
-.view-projects.view-display-id-block {}
+.mobile-soft-items {
+  display: none;
+  margin-bottom: 30px;
+}
 /* END CUSTOM */
 
 /* FOOTER */
@@ -1905,10 +1940,6 @@ ul.social li a {
   .group-soft-item-left {
     padding-left: 12%;
   }
-  .view-how-we-work-tabs .steps-block .field-name-field-soft-step-info .field-item,
-  .view-how-we-work .steps-block .field-name-field-soft-step-info .field-item {
-    width: 100%;
-  }
   .views-field-field-performancer ul {
     display: -webkit-box;
     display: -moz-box;
@@ -1981,7 +2012,102 @@ ul.social li a {
 }
 @media (max-width: 480px) {
   .view-services.view-display-id-block .views-row {
+    padding: 0;
     width: 100%;
+  }
+  .navbar .logo {
+    height: 80px;
+  }
+  .header-toll .icon-zen_contact_phone {
+    display: none;
+  }
+  .header-toll .inner-block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6%;
+  }
+  .header-toll .inner-block > * {
+    height: auto;
+  }
+  .header-toll .toll-country {
+    padding: 0 8px 0 0;
+    line-height: 1;
+  }
+  h1.site-name {
+    font-size: 100px;
+  }
+  .text-extra-large {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .home-info span {
+    padding: 0 3%;
+    line-height: 1;
+    position: relative;
+    top: -2px;
+  }
+  #service_slider {
+    visibility: visible;
+  }
+  .view-how-we-work-tabs .label-text {
+    display: none;
+  }
+  .view-how-we-work-tabs .nav > li > a {
+    font-size: 14px;
+  }
+  .view-how-we-work-tabs .nav > li .label-number {
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    line-height: 30px;
+  }
+  .view-how-we-work-tabs .nav > li:before,
+  .view-how-we-work-tabs .nav > li:after {
+    bottom: 29px;
+    width: calc(50% - 17px);
+  }
+  .view-how-we-work-tabs .nav > li:after {
+    left: calc(50% + 17px);
+  }
+  .view-how-we-work-tabs .nav > li:before {
+    right: calc(50% + 17px);
+  }
+  .view-how-we-work-tabs .nav > li.active > a {
+    font-size: 20px;
+  }
+  .view-how-we-work-tabs .nav > li.active .label-number {
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+  }
+  .view-how-we-work-tabs .nav > li.active:before,
+  .view-how-we-work-tabs .nav > li.active:after {
+    bottom: 38px;
+  }
+  .mobile-soft-items .group-soft-item-left {
+    display: none;
+  }
+  .mobile-soft-items .group-soft-item-right {
+    padding: 0 60px;
+    width: 100%;
+  }
+  .mobile-soft-items {
+    display: block;
+  }
+  .views-field-field-performancer ul {
+    flex-direction: column;
+  }
+  .group-soft-item-left {
+    width: 100%;
+  }
+  .view-how-we-work-tabs .steps-block .field-name-field-soft-step-info .field-item {
+    display: none;
   }
 }
 @media (max-width: 398px) {
@@ -1998,10 +2124,6 @@ ul.social li a {
   .text-large {
     font-size: 14px;
     line-height: 24px;
-  }
-  .text-extra-large {
-    font-size: 18px;
-    line-height: 34px;
   }
   .heading-large {
     font-size: 26px;

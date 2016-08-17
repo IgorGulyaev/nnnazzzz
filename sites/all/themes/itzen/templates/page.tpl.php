@@ -89,8 +89,10 @@
                             <div class="header-toll col-height col-xs-9 col-sm-4 col-middle">
                                 <div class="inner-block">
                                     <a href="tel:18884146654" class="toll-tel"><span><i class="icon-zen_contact_phone"></i> 1 888 </span>414 6654</a>
-                                    <span class="toll-country"><?php print t('USA/Canada'); ?></span>
-                                    <span class="toll-label"><?php print t('Toll Free'); ?></span>
+                                    <span>
+                                        <span class="toll-country"><?php print t('USA/Canada'); ?></span>
+                                        <span class="toll-label"><?php print t('Toll Free'); ?></span>
+                                    </span>
                                 </div>
                             </div>
                             <!-- Brand and toggle get grouped for better mobile display -->

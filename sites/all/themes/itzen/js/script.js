@@ -79,6 +79,7 @@ jQuery(document).ready(function ($) {
     new WOW().init();
 
     $('.view-how-we-work-tabs .nav > li').each(function () {
+        $(this).find('a').wrapInner('<span class="label-text"></span>');
         var labelNumber = $(this).index() + 1;
         var labelItem = '<span class="label-number">' + labelNumber + '</span>';
         $(this).find('a').append(labelItem);
@@ -95,6 +96,19 @@ jQuery(document).ready(function ($) {
         loop:true,
         view:'flow'
     });
-    portSlider.control('team_arrows');
+    portSlider.control('arrows');
+
+    $('.view-services.view-display-id-block .view-content').addClass('master-slider').attr('id', 'service_slider');
+    $('.view-services.view-display-id-block .view-content .views-row').addClass('ms-slide');
+    var serviceSlider = new MasterSlider();
+    var serviceSlideWidth = $(window).width();
+    serviceSlider.setup('service_slider' , {
+        height:380,
+        space:200,
+        fullwidth:true,
+        loop:true,
+        view:'flow'
+    });
+    serviceSlider.control('arrows');
 
 });
