@@ -85,6 +85,11 @@ jQuery(document).ready(function ($) {
         $(this).find('a').append(labelItem);
     });
 
+    $('.view-projects.view-display-id-block').attr('id', 'portfolio_scroll');
+    $('.view-projects.view-display-id-block .view-content').parallax({
+        mouseport: jQuery("#portfolio_scroll")
+    });
+
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
     var portSlider = new MasterSlider();
     var portSlideWidth = $(window).width();

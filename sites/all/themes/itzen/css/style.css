@@ -1592,11 +1592,15 @@ footer a {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /*margin: 0 -120px;*/
+  position: relative;
 }
 .view-projects.view-display-id-block .views-row {
   display: inline-block;
   position: relative;
+  width: 25%;
 }
 .view-projects.view-display-id-block .views-field-field-project-thumbnail {
   position: relative;
@@ -1927,6 +1931,12 @@ ul.social li a {
   .view-services.view-display-id-block .views-row {
     margin-bottom: 20px;
   }
+  .view-projects.view-display-id-block .view-content {
+    width: 120vw;
+  }
+  .view-projects.view-display-id-block .views-row {
+    width: 33%;
+  }
   .view-how-we-work-tabs .nav {
     width: 100%;
   }
@@ -2014,6 +2024,13 @@ ul.social li a {
   .view-services.view-display-id-block > .view-content {
     display: none !important;
   }
+  .view-projects.view-display-id-block .view-content {
+    margin-left: -20vw;
+    width: 556px;
+  }
+  .view-projects.view-display-id-block .views-row {
+    width: 278px;
+  }
 }
 @media (min-width: 501px) {
   .view-services.view-display-id-block_1 {
@@ -2089,6 +2106,7 @@ ul.social li a {
     right: calc(50% + 17px);
   }
   .view-how-we-work-tabs .nav > li.active > a {
+    padding: 0;
     font-size: 20px;
   }
   .view-how-we-work-tabs .nav > li.active .label-number {
@@ -2098,7 +2116,7 @@ ul.social li a {
   }
   .view-how-we-work-tabs .nav > li.active:before,
   .view-how-we-work-tabs .nav > li.active:after {
-    bottom: 38px;
+    bottom: 28px;
   }
   .mobile-soft-items .group-soft-item-left {
     display: none;
