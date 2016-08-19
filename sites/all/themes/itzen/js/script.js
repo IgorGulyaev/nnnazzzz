@@ -98,10 +98,9 @@ jQuery(document).ready(function ($) {
     });
     portSlider.control('arrows');
 
-    $('.view-services.view-display-id-block .view-content').addClass('master-slider').attr('id', 'service_slider');
-    $('.view-services.view-display-id-block .view-content .views-row').addClass('ms-slide');
     var serviceSlider = new MasterSlider();
-    var serviceSlideWidth = $(window).width();
+    $('.view-services.view-display-id-block_1 .view-content').addClass('master-slider').attr('id', 'service_slider');
+    $('#service_slider .views-row').addClass('ms-slide');
     serviceSlider.setup('service_slider' , {
         height:380,
         space:200,

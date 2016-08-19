@@ -2010,6 +2010,16 @@ ul.social li a {
     width: 49.5%;
   }
 }
+@media (max-width: 500px) {
+  .view-services.view-display-id-block > .view-content {
+    display: none !important;
+  }
+}
+@media (min-width: 501px) {
+  .view-services.view-display-id-block_1 {
+    display: none !important;
+  }
+}
 @media (max-width: 480px) {
   .view-services.view-display-id-block .views-row {
     padding: 0;
