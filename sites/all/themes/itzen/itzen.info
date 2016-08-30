@@ -27,6 +27,7 @@ dependencies[] = jquery_update (>=2)
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = css/masterslider.css
+stylesheets[all][] = css/jquery.bxslider.min.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/animate.css
 stylesheets[all][] = css/style.css
@@ -42,6 +43,10 @@ scripts[] = js/masterslider/modernizr-custom.js
 scripts[] = js/masterslider/jquery.easing.min.js
 scripts[] = js/masterslider/masterslider.min.js
 scripts[] = js/masterslider/masterslider.staff.carousel.js
+scripts[] = js/modernizr.custom.js
+scripts[] = js/jquery.bxslider.min.js
+scripts[] = js/device.min.js
+scripts[] = js/jquery.touchSwipe.js
 scripts[] = js/jquery.event.frame.js
 scripts[] = js/jquery.parallax.min.js
 scripts[] = js/wow.js
