@@ -1,3 +1,6 @@
+var worksSlider;
+var projectsSlider;
+
 (function ($) {
 
     Drupal.behaviors.initColorbox = {
@@ -69,22 +72,6 @@
                     $('.webform-confirmation').parents('.node').find('.links').remove();
                 }
             });
-
-            $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
-            $(".view-how-we-work-tabs .tab-content").bxSlider({
-                pagerCustom: '#workNav',
-                adaptiveHeight: true,
-                prevText: '',
-                nextText: '',
-                onSlideBefore: function () {
-                    $('.view-how-we-work-tabs .nav > li').removeClass('active');
-                }
-            });
-            $(".view-projects.view-display-id-block .view-content").bxSlider({
-                pager: false,
-                prevText: '',
-                nextText: ''
-            });
         }
     };
 
@@ -135,5 +122,28 @@ jQuery(document).ready(function ($) {
 function checkSize(){
     var wW = jQuery(window).width();
     if (wW <= 480 || jQuery('html').hasClass('mobile')){
+        jQuery(".view-how-we-work-tabs .nav").attr('id', 'workNav');
+        worksSlider = jQuery(".view-how-we-work-tabs .tab-content").bxSlider({
+            pagerCustom: '#workNav',
+            adaptiveHeight: true,
+            prevText: '',
+            nextText: '',
+            onSlideBefore: function () {
+                jQuery('.view-how-we-work-tabs .nav > li').removeClass('active');
+            }
+        });
+        projectsSlider = jQuery(".view-projects.view-display-id-block .view-content").bxSlider({
+            pager: false,
+            prevText: '',
+            nextText: '',
+            minSlides: 1,
+            maxSlides: 2,
+            moveSlides: 1
+        });
+    } else {
+        if (jQuery('.bx-wrapper')[0]) {
+            worksSlider.destroySlider();
+            projectsSlider.destroySlider();
+        }
     }
 }
