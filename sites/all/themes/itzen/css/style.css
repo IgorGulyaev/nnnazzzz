@@ -222,6 +222,7 @@ section {
   padding: 120px 0;
   min-height: 100vh;
 }
+section,
 section > .container {
   display: -webkit-box;
   display: -moz-box;
