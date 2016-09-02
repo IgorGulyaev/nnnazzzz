@@ -402,7 +402,7 @@ nav.navbar {
   vertical-align: middle;
 }
 .navbar-nav > li a {
-  padding: 0 24px;
+  padding: 0 14px;
   height: 80px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
