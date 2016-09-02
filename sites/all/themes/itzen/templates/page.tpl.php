@@ -147,7 +147,7 @@
                     <span>•</span>
                     <?php print t('mobile'); ?>
                     <span>•</span>
-                    <?php print t('seo'); ?>
+                    <?php print t('relax'); ?>
                 </div>
                 <div class="link">
                     <a href="#prefix" class="btn"><?php print t('Portfolio'); ?></a>
