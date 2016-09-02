@@ -219,6 +219,13 @@ li {
   display: none !important;
 }
 section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
   padding: 120px 0;
   min-height: 100vh;
 }
