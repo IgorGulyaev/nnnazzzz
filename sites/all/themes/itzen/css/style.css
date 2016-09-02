@@ -219,6 +219,10 @@ li {
   display: none !important;
 }
 section {
+  padding: 120px 0;
+  min-height: 100vh;
+}
+section > .container {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -226,8 +230,6 @@ section {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
-  padding: 120px 0;
-  min-height: 100vh;
 }
 section .heading-large {
   margin-top: 0;
