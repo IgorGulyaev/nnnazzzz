@@ -83,6 +83,37 @@ jQuery(document).ready(function ($) {
 
     new WOW().init();
 
+    var $window = $(window);		//Window object
+
+    var scrollTime = 1.6;			//Scroll time
+    var scrollDistance = 400;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+
+    $window.on("mousewheel DOMMouseScroll", function (event) {
+
+        event.preventDefault();
+
+        var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
+        var scrollTop = $window.scrollTop();
+        var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+
+        TweenMax.to($window, scrollTime, {
+            scrollTo: {y: finalScroll, autoKill: true},
+            ease: Expo.easeOut,
+            autoKill: true,
+            overwrite: 5
+        });
+
+    });
+
+    var $bgobj = $('.region-header-bg');
+    $window.scroll(function () {
+        if ($('html').hasClass('touch') == false) {
+            var yPos = -($window.scrollTop() / 3);
+            var coords = 'center ' + yPos + 'px';
+            $bgobj.css({backgroundPosition: coords});
+        }
+    });
+
     $('.view-how-we-work-tabs .nav > li').each(function () {
         $(this).find('a').attr('data-slide-index', $(this).index()).wrapInner('<span class="label-text"></span>');
         var labelNumber = $(this).index() + 1;
