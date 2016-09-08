@@ -655,10 +655,15 @@ a.btn:hover {
 .view-pricing.view-display-id-page_1 .view-header {
   margin-bottom: 65px;
 }
-.view-pricing.view-display-id-page_1 .view-header .section-title {
+.view-pricing.view-display-id-page_1 .view-footer {
+  margin-top: 65px;
+}
+.view-pricing.view-display-id-page_1 .view-header .section-title,
+.view-pricing.view-display-id-page_1 .view-footer .section-title {
   color: #ffe71e;
 }
-.view-pricing.view-display-id-page_1 .view-header p {
+.view-pricing.view-display-id-page_1 .view-header p,
+.view-pricing.view-display-id-page_1 .view-footer p {
   margin-bottom: 15px;
   color: rgba(255,255,255,.3);
 }
@@ -758,6 +763,43 @@ a.btn:hover {
   display: none !important;
 }
 .view-pricing.view-display-id-page_1 {}
+
+.pricing-blocks {}
+.pricing-blocks .inner-block {
+  padding: 40px;
+  min-height: 75px;
+  border: none;
+  background-color: rgba(255,255,255,.02);
+  color: #fff;
+}
+.pricing-blocks .inner-block a {
+  position: relative;
+  display: block;
+  color: #ffe71e;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.pricing-blocks .inner-block a:after {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  display: block;
+  content: "\e918";
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+.pricing-blocks .inner-block a[aria-expanded="true"]:after {
+  content: "\e919";
+}
+.pricing-blocks {}
 /* END PRICING */
 
 /* HOW WE WORK */
