@@ -103,6 +103,17 @@ jQuery(document).ready(function ($) {
     });
     portSlider.control('arrows');
 
+    $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
+    worksSlider = $(".view-how-we-work-tabs .tab-content").bxSlider({
+        pagerCustom: '#workNav',
+        adaptiveHeight: true,
+        prevText: '',
+        nextText: '',
+        onSlideBefore: function () {
+            $('.view-how-we-work-tabs .nav > li').removeClass('active');
+        }
+    });
+
     var serviceSlider = new MasterSlider();
     $('.view-services.view-display-id-block_1 .view-content').addClass('master-slider').attr('id', 'service_slider');
     $('#service_slider .views-row').addClass('ms-slide');
@@ -122,16 +133,6 @@ jQuery(document).ready(function ($) {
 function checkSize(){
     var wW = jQuery(window).width();
     if (wW <= 480 || jQuery('html').hasClass('mobile')){
-        jQuery(".view-how-we-work-tabs .nav").attr('id', 'workNav');
-        worksSlider = jQuery(".view-how-we-work-tabs .tab-content").bxSlider({
-            pagerCustom: '#workNav',
-            adaptiveHeight: true,
-            prevText: '',
-            nextText: '',
-            onSlideBefore: function () {
-                jQuery('.view-how-we-work-tabs .nav > li').removeClass('active');
-            }
-        });
         projectsSlider = jQuery(".view-projects.view-display-id-block .view-content").bxSlider({
             pager: false,
             prevText: '',
@@ -142,7 +143,6 @@ function checkSize(){
         });
     } else {
         if (jQuery('.bx-wrapper')[0]) {
-            worksSlider.destroySlider();
             projectsSlider.destroySlider();
         }
     }
