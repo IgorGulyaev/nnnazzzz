@@ -50,6 +50,7 @@ scripts[] = js/device.min.js
 scripts[] = js/jquery.touchSwipe.js
 scripts[] = js/jquery.event.frame.js
 scripts[] = js/jquery.parallax.min.js
+scripts[] = js/ScrollToPlugin.min.js
 scripts[] = js/TweenMax.min.js
 scripts[] = js/wow.js
 scripts[] = js/script.js

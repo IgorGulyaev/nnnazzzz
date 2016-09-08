@@ -98,7 +98,7 @@ jQuery(document).ready(function ($) {
 
         TweenMax.to($window, scrollTime, {
             scrollTo: {y: finalScroll, autoKill: true},
-            ease: Power1.easeOut,
+            ease: Expo.easeOut,
             autoKill: true,
             overwrite: 5
         });
