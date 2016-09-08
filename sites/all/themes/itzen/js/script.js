@@ -105,6 +105,15 @@ jQuery(document).ready(function ($) {
 
     });
 
+    var $bgobj = $('.region-header-bg');
+    $window.scroll(function () {
+        if ($('html').hasClass('touch') == false) {
+            var yPos = -($window.scrollTop() / 10);
+            var coords = 'center ' + yPos + 'px';
+            $bgobj.css({backgroundPosition: coords});
+        }
+    });
+
     $('.view-how-we-work-tabs .nav > li').each(function () {
         $(this).find('a').attr('data-slide-index', $(this).index()).wrapInner('<span class="label-text"></span>');
         var labelNumber = $(this).index() + 1;
