@@ -43,12 +43,14 @@ scripts[] = js/masterslider/modernizr-custom.js
 scripts[] = js/masterslider/jquery.easing.min.js
 scripts[] = js/masterslider/masterslider.min.js
 scripts[] = js/masterslider/masterslider.staff.carousel.js
+scripts[] = js/html5shiv.js
 scripts[] = js/modernizr.custom.js
 scripts[] = js/jquery.bxslider.min.js
 scripts[] = js/device.min.js
 scripts[] = js/jquery.touchSwipe.js
 scripts[] = js/jquery.event.frame.js
 scripts[] = js/jquery.parallax.min.js
+scripts[] = js/TweenMax.min.js
 scripts[] = js/wow.js
 scripts[] = js/script.js
 
