@@ -108,7 +108,7 @@ jQuery(document).ready(function ($) {
     var $bgobj = $('.region-header-bg');
     $window.scroll(function () {
         if ($('html').hasClass('touch') == false) {
-            var yPos = -($window.scrollTop() / 8);
+            var yPos = -($window.scrollTop() / 3);
             var coords = 'center ' + yPos + 'px';
             $bgobj.css({backgroundPosition: coords});
         }
