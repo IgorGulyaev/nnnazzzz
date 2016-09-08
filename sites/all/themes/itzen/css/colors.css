@@ -39,6 +39,6 @@ a {
 
 .region-header-bg {
   background: url("../images/header.png") no-repeat center center;
-  -webkit-background-size:cover;
-  background-size:cover;
+  -webkit-background-size:auto 160vh;
+  background-size:auto 160vh;
 }
