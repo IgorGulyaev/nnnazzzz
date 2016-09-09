@@ -157,6 +157,9 @@ body {
   font-size: 14px;
   color: #fff;
 }
+body {
+  overflow: hidden !important;
+}
 #content {
   display: none !important;
 }
@@ -716,6 +719,23 @@ a.btn:hover {
   float: left;
   font-size: 30px;
   font-weight: 300;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-duration {
+  position: absolute;
+  top: 8px;
+  right: 140px;
+}
+.view-pricing.view-display-id-page_1 .views-field-field-pricing-duration .field-content {
+  padding: 0 18px;
+  height: 29px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,.02);
+  color: rgba(255,255,255,.2);
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 29px;
 }
 .view-pricing.view-display-id-page_1 .views-field-field-pricing-price {
   float: right;

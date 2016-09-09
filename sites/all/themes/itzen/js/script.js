@@ -5,11 +5,17 @@ var projectsSlider;
 
     Drupal.behaviors.initColorbox = {
         attach: function (context, settings) {
-            if (!$.isFunction($.colorbox) || typeof settings.colorbox === 'undefined') {
+            /*if (!$.isFunction($.colorbox) || typeof settings.colorbox === 'undefined') {
                 return;
             } else {
+
+            }*/
+            $(document).bind('cbox_open', function () {
                 $('body').addClass('popup-open');
-            }
+            });
+            $(document).bind('cbox_closed', function () {
+                $('body').removeClass('popup-open');
+            });
         }
     };
 
