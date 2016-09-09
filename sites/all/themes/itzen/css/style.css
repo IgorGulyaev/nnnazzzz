@@ -158,6 +158,8 @@ body {
   color: #fff;
 }
 body.popup-open {
+  position: fixed;
+  width: 100%;
   overflow: hidden !important;
 }
 #content {

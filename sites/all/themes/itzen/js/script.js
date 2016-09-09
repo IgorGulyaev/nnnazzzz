@@ -96,18 +96,20 @@ jQuery(document).ready(function ($) {
 
     $window.on("mousewheel DOMMouseScroll", function (event) {
 
-        event.preventDefault();
+        if ($('body').hasClass('popup-open') == false) {
+            event.preventDefault();
 
-        var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
-        var scrollTop = $window.scrollTop();
-        var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+            var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
+            var scrollTop = $window.scrollTop();
+            var finalScroll = scrollTop - parseInt(delta * scrollDistance);
 
-        TweenMax.to($window, scrollTime, {
-            scrollTo: {y: finalScroll, autoKill: true},
-            ease: Expo.easeOut,
-            autoKill: true,
-            overwrite: 5
-        });
+            TweenMax.to($window, scrollTime, {
+                scrollTo: {y: finalScroll, autoKill: true},
+                ease: Expo.easeOut,
+                autoKill: true,
+                overwrite: 5
+            });
+        }
 
     });
 
