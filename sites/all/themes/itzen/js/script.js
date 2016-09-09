@@ -12,10 +12,12 @@ var projectsSlider;
             }*/
             $(document).bind('cbox_open', function () {
                 $('body').addClass('popup-open');
+                $('body').css('position', 'fixed');
                 $('body').css('top', $(window).scrollTop());
             });
             $(document).bind('cbox_closed', function () {
                 $('body').removeClass('popup-open');
+                $('body').css('position', 'relative');
                 $('body').css('top', '0');
             });
         }
