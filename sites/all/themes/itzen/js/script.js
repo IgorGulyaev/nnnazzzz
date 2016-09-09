@@ -12,9 +12,11 @@ var projectsSlider;
             }*/
             $(document).bind('cbox_open', function () {
                 $('body').addClass('popup-open');
+                $('body').css('top', $(window).scrollTop());
             });
             $(document).bind('cbox_closed', function () {
                 $('body').removeClass('popup-open');
+                $('body').css('top', '0');
             });
         }
     };
