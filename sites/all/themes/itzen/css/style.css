@@ -158,7 +158,7 @@ body {
   color: #fff;
   width: 100%;
 }
-body.popup-open {
+html.popup-open {
   /*position: fixed;
   left: 0;
   width: 100%;*/

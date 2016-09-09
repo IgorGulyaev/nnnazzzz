@@ -11,14 +11,10 @@ var projectsSlider;
 
             }*/
             $(document).bind('cbox_open', function () {
-                $('body').addClass('popup-open');
-                $('body').css('position', 'fixed');
-                $('body').css('top', $(window).scrollTop());
+                $('html').addClass('popup-open');
             });
             $(document).bind('cbox_closed', function () {
-                $('body').removeClass('popup-open');
-                $('body').css('position', 'relative');
-                $('body').css('top', '0');
+                $('html').removeClass('popup-open');
             });
         }
     };
@@ -93,6 +89,10 @@ jQuery(document).ready(function ($) {
 
     new WOW().init();
 
+    $('.link a').click(function(e) {
+        e.preventDefault();
+    });
+
     var $window = $(window);		//Window object
 
     var scrollTime = 1.6;			//Scroll time
@@ -100,7 +100,7 @@ jQuery(document).ready(function ($) {
 
     $window.on("mousewheel DOMMouseScroll", function (event) {
 
-        if ($('body').hasClass('popup-open') == false) {
+        if ($('html').hasClass('popup-open') == false) {
             event.preventDefault();
 
             var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
