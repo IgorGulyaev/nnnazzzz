@@ -694,6 +694,7 @@ a.btn:hover {
 }
 .view-pricing.view-display-id-page_1 .fieldset-title:after {
   font-family: 'icomoon' !important;
+  font-size: 18px;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -704,13 +705,13 @@ a.btn:hover {
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
   display: block;
-  content: "\e918";
+  content: "\e919";
   position: absolute;
   top: 16px;
   right: -50px;
 }
 .view-pricing.view-display-id-page_1 .active .fieldset-title:after {
-  content: "\e919";
+  content: "\e91a";
 }
 .view-pricing.view-display-id-page_1 .views-field-field-pricing-icon {
   position: absolute;
@@ -791,14 +792,6 @@ a.btn:hover {
 .pricing-blocks {
   margin: 55px 0 50px;
 }
-.pricing-blocks .row {
-  margin-right: -30px;
-  margin-left: -30px;
-}
-.pricing-blocks [class*="col-"] {
-  padding-right: 30px;
-  padding-left: 30px;
-}
 .pricing-blocks .inner-block {
   padding: 40px;
   border: none;
@@ -825,13 +818,13 @@ a.btn:hover {
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
   display: block;
-  content: "\e918";
+  content: "\e919";
   position: absolute;
   top: 6px;
   right: 0;
 }
 .pricing-blocks .inner-block a[aria-expanded="true"]:after {
-  content: "\e919";
+  content: "\e91a";
 }
 .pricing-blocks .inner-block ul {
   margin: 25px 0 0;
@@ -851,7 +844,7 @@ a.btn:hover {
   left: -4px;
   margin: -11px 0 0;
   display: inline-block;
-  content: "\e90a";
+  content: "\e90b";
   vertical-align: middle;
   color: #ffe71e;
   font-size: 24px;
@@ -965,8 +958,16 @@ a.btn:hover {
 .view-how-we-work-tabs .views-field-body,
 .view-how-we-work .views-field-body {
   margin-bottom: 68px;
-  opacity: .3;
+  color: rgba(255,255,255,0.3);
   font-size: 16px;
+}
+.view-how-we-work-tabs .views-field-body i {
+  display: inline-block;
+  margin-top: -50px;
+  font-size: 155px;
+}
+.view-how-we-work-tabs .views-field-body .link {
+  margin-top: 40px;
 }
 .view-how-we-work-tabs .steps-block .field-collection-container,
 .view-how-we-work .steps-block .field-collection-container {
@@ -1010,7 +1011,7 @@ a.btn:hover {
   left: 0;
   margin: -11px 0 0;
   display: inline-block;
-  content: "\e90a";
+  content: "\e90b";
   vertical-align: middle;
   color: #ffe71e;
   font-size: 24px;
@@ -1155,13 +1156,13 @@ a.btn:hover {
   color: #0858e4;
 }
 .form-item-submitted-contact-method-select-method label[for="edit-submitted-contact-method-select-method-1"]:before {
-  content: "\e900";
+  content: "\e901";
 }
 .form-item-submitted-contact-method-select-method label[for="edit-submitted-contact-method-select-method-2"]:before {
-  content: "\e903";
+  content: "\e904";
 }
 .form-item-submitted-contact-method-select-method label[for="edit-submitted-contact-method-select-method-3"]:before {
-  content: "\e901";
+  content: "\e902";
 }
 .form-item-submitted-contact-method-select-method {
   display: inline-block;
@@ -1484,7 +1485,8 @@ a.btn:hover {
 
 .bx-prev,
 .bx-next {
-    text-indent: 0 !important;
+  background: none !important;
+  text-indent: 0 !important;
 }
 
 .bx-prev,
@@ -1497,11 +1499,11 @@ a.btn:hover {
 }
 .bx-prev:before,
 .ms-nav-prev:before {
-  content: "\e914";
+  content: "\e915";
 }
 .bx-next:before,
 .ms-nav-next:before {
-  content: "\e913";
+  content: "\e914";
 }
 
 /* END MEMBERS VIEW */
@@ -2021,7 +2023,7 @@ ul.social li a {
   text-indent: 0;
 }
 #cboxClose:before {
-  content: "\e916";
+  content: "\e917";
   color: #fff;
   font-size: 30px;
 }
@@ -2038,12 +2040,52 @@ ul.social li a {
 /* END COLORBOX */
 
 /* MEDIA QUERIES */
+@media (min-width: 961px) {
+  .pricing-blocks .row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .pricing-blocks [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .view-services.view-display-id-block .views-row .views-field-title {
     font-size: 24px;
   }
   .region-footer {
     padding: 0 40px;
+  }
+}
+@media (max-width: 960px) {
+  #cboxLoadedContent {
+    padding: 30px;
+  }
+  .view-pricing.view-display-id-page_1 .views-row {
+    padding: 15px 80px 0 100px;
+    min-height: 135px;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-icon {
+    left: -80px;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-title {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-duration {
+    position: static;
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin-top: 7px;
+    margin-right: 40px;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-price {
+    float: left;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item ul li {
+    width: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -2307,6 +2349,51 @@ ul.social li a {
     .block-title {
         font-size: 20px;
     }
+  #cboxClose {
+    top: 15px !important;
+    right: 15px !important;
+  }
+  #cboxLoadedContent {
+    padding: 30px 15px;
+  }
+  .view-pricing.view-display-id-page_1 .view-content {
+    margin: 0 -15px;
+  }
+  .view-pricing.view-display-id-page_1 .views-row {
+    padding: 15px 15px 0 15px;
+    min-height: 165px;
+  }
+  .view-pricing.view-display-id-page_1 .fieldset-title {
+    position: relative;
+    padding: 0 80px;
+  }
+  .view-pricing.view-display-id-page_1 .fieldset-title:after {
+    right: 0;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-icon {
+    left: 0;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-title {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-duration {
+    margin-right: 0;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-price {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item ul li {
+    width: 100%;
+  }
+  .view-pricing.view-display-id-page_1 .views-field-nothing a {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .node-webform header h2 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 398px) {
   h3 {

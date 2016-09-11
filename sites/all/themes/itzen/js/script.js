@@ -74,6 +74,8 @@ var projectsSlider;
             });
             $(document).ajaxComplete(function() {
                 if ($('.webform-confirmation')[0]) {
+                    $('input[value="phone_method"]').trigger('click');
+                    //$('input[value="phone_method"]').parent('label').attr('data-checked', 'checked');
                     $('.webform-confirmation').parents('.node').find('header').remove();
                     $('.webform-confirmation').parents('.node').find('.links').remove();
                 }
@@ -146,17 +148,6 @@ jQuery(document).ready(function ($) {
     });
     portSlider.control('arrows');
 
-    $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
-    worksSlider = $(".view-how-we-work-tabs .tab-content").bxSlider({
-        pagerCustom: '#workNav',
-        adaptiveHeight: true,
-        prevText: '',
-        nextText: '',
-        onSlideBefore: function () {
-            $('.view-how-we-work-tabs .nav > li').removeClass('active');
-        }
-    });
-
     var serviceSlider = new MasterSlider();
     $('.view-services.view-display-id-block_1 .view-content').addClass('master-slider').attr('id', 'service_slider');
     $('#service_slider .views-row').addClass('ms-slide');
@@ -168,6 +159,8 @@ jQuery(document).ready(function ($) {
         view:'flow'
     });
     serviceSlider.control('arrows');
+
+    $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
 
     $(window).resize(checkSize);
 
@@ -187,6 +180,21 @@ function checkSize(){
     } else {
         if (jQuery('.bx-wrapper')[0]) {
             projectsSlider.destroySlider();
+        }
+    }
+    if (wW <= 768 || jQuery('html').hasClass('mobile')){
+        worksSlider = jQuery(".view-how-we-work-tabs .tab-content").bxSlider({
+            pagerCustom: '#workNav',
+            adaptiveHeight: true,
+            prevText: '',
+            nextText: '',
+            onSlideBefore: function () {
+                jQuery('.view-how-we-work-tabs .nav > li').removeClass('active');
+            }
+        });
+    } else {
+        if (jQuery('.bx-wrapper')[0]) {
+            worksSlider.destroySlider();
         }
     }
 }
