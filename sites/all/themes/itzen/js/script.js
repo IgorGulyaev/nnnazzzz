@@ -167,7 +167,8 @@ jQuery(document).ready(function ($) {
         margin:10,
         nav:true,
         items:1,
-        dotsContainer: '#workNav'
+        dotsContainer: '#workNav',
+        paginationNumbers: true
     });
 
     $(window).resize(checkSize);
