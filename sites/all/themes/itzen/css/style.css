@@ -2050,6 +2050,9 @@ ul.social li a {
 
 /* MEDIA QUERIES */
 @media (min-width: 961px) {
+  .owl-prev, .owl-next {
+    display: none !important;
+  }
   .pricing-blocks .row {
     margin-right: -30px;
     margin-left: -30px;
