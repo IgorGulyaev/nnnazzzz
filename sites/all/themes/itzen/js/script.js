@@ -160,7 +160,7 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
-    $(".view-how-we-work-tabs .view-header .view-content").attr('id', 'workNav');
+    $(".view-how-we-work-tabs .view-header .owl-dots").attr('id', 'workNav');
 
     $(".view-how-we-work-tabs.view-display-id-block > .view-content").owlCarousel({
         loop:true,
