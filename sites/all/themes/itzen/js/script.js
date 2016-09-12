@@ -164,7 +164,8 @@ jQuery(document).ready(function ($) {
         loop:true,
         margin:10,
         nav:true,
-        items:1
+        items:1,
+        dotsContainer: '#workNav'
     });
 
     $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
