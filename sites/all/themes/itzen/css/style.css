@@ -437,7 +437,7 @@ nav.navbar {
 .navbar-nav > li a:hover,
 .navbar-nav > li a:focus,
 .navbar-nav > li a:active {
-  color: #ffe71e;
+  color: #ffe71e !important;
 }
 .navbar-nav > li.home a {
   font-size: 26px;
