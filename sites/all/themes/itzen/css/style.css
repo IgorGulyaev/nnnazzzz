@@ -912,8 +912,8 @@ a.btn:hover {
 }
 #workNav .active .label-number {
   border-color: rgba(255,231,30,1);
-  background-color: #ffe71e;
-  color: #1f0a1f;
+  background-color: #ffe71e !important;
+  color: #1f0a1f !important;
 }
 #workNav > .owl-dot:before,
 #workNav > .owl-dot:after {
@@ -1461,6 +1461,8 @@ a.btn:hover {
   margin-top: 88px;
 }
 
+.owl-prev,
+.owl-next,
 .bx-prev,
 .bx-next,
 .ms-nav-prev,
@@ -1492,18 +1494,22 @@ a.btn:hover {
   text-indent: 0 !important;
 }
 
+.owl-prev,
 .bx-prev,
 .ms-nav-prev {
   left: -10px;
 }
+.owl-next,
 .bx-next,
 .ms-nav-next {
   right: -10px;
 }
+.owl-prev,
 .bx-prev:before,
 .ms-nav-prev:before {
   content: "\e915";
 }
+.owl-next,
 .bx-next:before,
 .ms-nav-next:before {
   content: "\e914";
