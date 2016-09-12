@@ -128,11 +128,11 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('.view-how-we-work-tabs .nav > li').each(function () {
-        $(this).find('a').attr('data-slide-index', $(this).index()).wrapInner('<span class="label-text"></span>');
+    $('.view-how-we-work-tabs .view-header .owl-dots > li').each(function () {
+        $(this).find('.field-content').wrapInner('<span class="label-text"></span>');
         var labelNumber = $(this).index() + 1;
         var labelItem = '<span class="label-number">' + labelNumber + '</span>';
-        $(this).find('a').append(labelItem);
+        $(this).find('.field-content').append(labelItem);
     });
 
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
