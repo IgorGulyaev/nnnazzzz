@@ -160,6 +160,8 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
+    $(".view-how-we-work-tabs .view-header .view-content").attr('id', 'workNav');
+
     $(".view-how-we-work-tabs.view-display-id-block > .view-content").owlCarousel({
         loop:true,
         margin:10,
@@ -167,8 +169,6 @@ jQuery(document).ready(function ($) {
         items:1,
         dotsContainer: '#workNav'
     });
-
-    $(".view-how-we-work-tabs .view-header .view-content").attr('id', 'workNav');
 
     $(window).resize(checkSize);
 
