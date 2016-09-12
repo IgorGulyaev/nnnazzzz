@@ -434,6 +434,11 @@ nav.navbar {
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
 }
+.navbar-nav > li a:hover,
+.navbar-nav > li a:focus,
+.navbar-nav > li a:active {
+  color: #ffe71e;
+}
 .navbar-nav > li.home a {
   font-size: 26px;
   height: 160px;
@@ -647,7 +652,7 @@ a.btn:hover {
 }
 
 #services {
-  
+
 }
 .service-item i {
   font-size: 120px;
