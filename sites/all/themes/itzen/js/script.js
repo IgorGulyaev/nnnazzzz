@@ -128,7 +128,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('.view-team.view-display-id-block .view-content').insertBefore('<div id="workNav" class="owl-dots"></div>');
+    $('.view-how-we-work-tabs.view-display-id-block .view-content').insertBefore('<div id="workNav" class="owl-dots"></div>');
 
     $('.view-how-we-work-tabs .view-header .owl-dots > li').each(function () {
         var labelNumber = $(this).index() + 1;
