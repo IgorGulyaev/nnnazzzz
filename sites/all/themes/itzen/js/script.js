@@ -128,12 +128,12 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('.view-team.view-display-id-block .view-content').prepend('<div id="workNav" class="owl-dots"></div>');
+    $('.view-team.view-display-id-block .view-content').insertBefore('<div id="workNav" class="owl-dots"></div>');
 
     $('.view-how-we-work-tabs .view-header .owl-dots > li').each(function () {
         var labelNumber = $(this).index() + 1;
         var labelText = $(this).find('.label-text').text();
-        $('#workNav').append('<span><span class="label-number">'+labelNumber+'</span><span class="label-text">'+labelText+'</span></span>');
+        $('#workNav').append('<div class="owl-dot"><span class="label-number">'+labelNumber+'</span><span class="label-text">'+labelText+'</span></span>');
     });
 
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
