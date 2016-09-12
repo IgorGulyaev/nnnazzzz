@@ -164,7 +164,7 @@
 </header>
 
 <?php if($page["highlighted"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-highlighted') ?>" class="region-highlighted-bg wow zoomIn">
+<section id="services" class="region-highlighted-bg wow zoomIn">
     <div class="container">
         <?php print render($page['highlighted']); ?>
     </div>
@@ -189,7 +189,7 @@
 </div>
 
 <?php if($page["prefix"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-prefix') ?>" class="region-prefix-bg wow zoomIn">
+<section id="portfolio" class="region-prefix-bg wow zoomIn">
     <div class="container">
         <?php print render($page['prefix']); ?>
     </div>
@@ -205,7 +205,7 @@
 <?php endif;?>
 
 <?php if($page["suffix"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-suffix') ?>" class="region-suffix-bg wow zoomIn">
+<section id="process" class="region-suffix-bg wow zoomIn">
     <div class="container">
         <?php print render($page['suffix']); ?>
     </div>
@@ -213,7 +213,7 @@
 <?php endif;?>
 
 <?php if($page["featured"]): ?>
-<section id="<?php echo theme_get_setting('region_anchor-featured') ?>" class="region-featured-bg wow zoomIn">
+<section id="team" class="region-featured-bg wow zoomIn">
     <div class="container">
         <?php print render($page['featured']); ?>
     </div>
