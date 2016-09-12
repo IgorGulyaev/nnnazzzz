@@ -221,7 +221,7 @@
 <?php endif;?>
 
 <?php if($page["footer"]): ?>
-<footer id="<?php echo theme_get_setting('region_anchor-footer') ?>" class="region-footer-bg wow zoomIn">
+<footer id="contacts" class="region-footer-bg wow zoomIn">
   <div class="container text-center">
     <div class="row">
       <?php print render($page['footer']); ?>
