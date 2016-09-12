@@ -879,7 +879,6 @@ a.btn:hover {
 #workNav > .owl-dot span {
   position: static;
   display: inline-block;
-  border: none !important;
   background: none !important;
   color: rgba(255,231,30,.2);
   font-size: 20px;
@@ -919,7 +918,7 @@ a.btn:hover {
 #workNav > .owl-dot:before,
 #workNav > .owl-dot:after {
   position: absolute;
-  bottom: 34px;
+  bottom: 24px;
   display: block;
   content: '';
   border: 1px dashed rgba(255,231,30,.2);
