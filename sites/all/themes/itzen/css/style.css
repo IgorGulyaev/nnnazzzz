@@ -2098,6 +2098,9 @@ ul.social li a {
   }
 }
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
   .navbar-nav {
     float: left;
     text-align: left;
@@ -2247,9 +2250,6 @@ ul.social li a {
   }
 }
 @media (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
   #workNav {
     width: 100%;
   }
