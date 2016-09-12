@@ -2248,6 +2248,13 @@ ul.social li a {
   .view-team.view-display-id-block .views-field-field-team-photo img {
     max-width: 80%;
   }
+  .view-team.view-display-id-block .views-field-field-team-occupation {
+    margin-bottom: 25px;
+  }
+  .view-team.view-display-id-block .views-field-description {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 500px) {
   .view-services.view-display-id-block > .view-content {
