@@ -2238,6 +2238,9 @@ ul.social li a {
   }
 }
 @media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
   .view-services.view-display-id-block .views-row {
     padding: 0;
     width: 100%;
