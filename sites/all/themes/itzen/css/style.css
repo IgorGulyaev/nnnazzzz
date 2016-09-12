@@ -946,6 +946,10 @@ a.btn:hover {
   align-items: center;
 }
 
+.view-how-we-work-tabs .view-header {
+  display: none !important;
+}
+
 .view-how-we-work-tabs .views-field-title,
 .view-how-we-work .views-field-title {
   margin-top: 40px;

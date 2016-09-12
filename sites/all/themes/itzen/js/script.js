@@ -133,7 +133,7 @@ jQuery(document).ready(function ($) {
     $('.view-how-we-work-tabs .view-header .view-content > .owl-dot').each(function () {
         var labelNumber = $(this).index() + 1;
         var labelText = $(this).find('.label-text').text();
-        $('#workNav').append('<div class="owl-dot"><span class="label-number">'+labelNumber+'</span><span class="label-text">'+labelText+'</span></span>');
+        $('#workNav').append('<div class="owl-dot"><span class="label-text">'+labelText+'</span><span class="label-number">'+labelNumber+'</span></span>');
     });
 
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
