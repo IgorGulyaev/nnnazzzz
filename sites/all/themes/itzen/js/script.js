@@ -129,10 +129,8 @@ jQuery(document).ready(function ($) {
     });
 
     $('.view-how-we-work-tabs .view-header .owl-dots > li').each(function () {
-        $(this).find('.field-content').wrapInner('<span class="label-text"></span>');
         var labelNumber = $(this).index() + 1;
-        var labelItem = '<span class="label-number">' + labelNumber + '</span>';
-        $(this).find('.field-content').append(labelItem);
+        $(this).find('.label-number').text(labelNumber);
     });
 
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
