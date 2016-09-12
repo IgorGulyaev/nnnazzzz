@@ -130,7 +130,7 @@ jQuery(document).ready(function ($) {
 
     $('.view-how-we-work-tabs.view-display-id-block').prepend('<div id="workNav" class="owl-dots"></div>');
 
-    $('.view-how-we-work-tabs .view-header .owl-dots > li').each(function () {
+    $('.view-how-we-work-tabs .view-header .view-content > .owl-dot').each(function () {
         var labelNumber = $(this).index() + 1;
         var labelText = $(this).find('.label-text').text();
         $('#workNav').append('<div class="owl-dot"><span class="label-number">'+labelNumber+'</span><span class="label-text">'+labelText+'</span></span>');
