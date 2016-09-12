@@ -128,9 +128,12 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $('.view-team.view-display-id-block .view-content').prepend('<div id="workNav" class="owl-dots"></div>');
+
     $('.view-how-we-work-tabs .view-header .owl-dots > li').each(function () {
         var labelNumber = $(this).index() + 1;
-        $(this).find('.label-number').text(labelNumber);
+        var labelText = $(this).find('.label-text').text();
+        $('#workNav').append('<span><span class="label-number">'+labelNumber+'</span><span class="label-text">'+labelText+'</span></span>');
     });
 
     $('.view-team.view-display-id-block .view-content').addClass('master-slider').attr('id', 'team_slider');
@@ -157,8 +160,6 @@ jQuery(document).ready(function ($) {
         view:'flow'
     });
     serviceSlider.control('arrows');
-
-    $(".view-how-we-work-tabs .view-header .owl-dots").attr('id', 'workNav');
 
     $(".view-how-we-work-tabs.view-display-id-block > .view-content").owlCarousel({
         loop:true,
