@@ -160,12 +160,11 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
-    $(".view-how-we-work-tabs .tab-content").owlCarousel({
+    $(".view-how-we-work-tabs .view-content").owlCarousel({
         loop:true,
         margin:10,
         nav:true,
-        items:1,
-        dotsContainer: '#workNav'
+        items:1
     });
 
     $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
