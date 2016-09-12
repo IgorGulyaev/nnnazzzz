@@ -160,14 +160,15 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
-    $(".view-how-we-work-tabs .view-content").owlCarousel({
+    $(".view-how-we-work-tabs > .view-content").owlCarousel({
         loop:true,
         margin:10,
         nav:true,
-        items:1
+        items:1,
+        dotsContainer: '#workNav'
     });
 
-    $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
+    $(".view-how-we-work-tabs .view-header .view-content").attr('id', 'workNav');
 
     $(window).resize(checkSize);
 
