@@ -30,6 +30,7 @@ stylesheets[all][] = css/masterslider.css
 stylesheets[all][] = css/jquery.bxslider.min.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/owl.carousel.css
 stylesheets[all][] = css/style.css
 ;stylesheets[all][] = css/custom_style/custom_style.css
 
@@ -46,6 +47,7 @@ scripts[] = js/masterslider/masterslider.staff.carousel.js
 scripts[] = js/html5shiv.js
 scripts[] = js/modernizr.custom.js
 scripts[] = js/jquery.bxslider.min.js
+scripts[] = js/owl.carousel.min.js
 scripts[] = js/device.min.js
 scripts[] = js/jquery.touchSwipe.js
 scripts[] = js/jquery.event.frame.js

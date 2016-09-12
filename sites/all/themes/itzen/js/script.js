@@ -160,6 +160,13 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
+    $(".view-how-we-work-tabs .tab-content").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1
+    });
+
     $(".view-how-we-work-tabs .nav").attr('id', 'workNav');
 
     $(window).resize(checkSize);
@@ -182,7 +189,7 @@ function checkSize(){
             projectsSlider.destroySlider();
         }
     }
-    if (wW <= 768 || jQuery('html').hasClass('mobile')){
+    /*if (wW <= 768 || jQuery('html').hasClass('mobile')){
         worksSlider = jQuery(".view-how-we-work-tabs .tab-content").bxSlider({
             pagerCustom: '#workNav',
             adaptiveHeight: true,
@@ -196,5 +203,5 @@ function checkSize(){
         if (jQuery('.bx-wrapper')[0]) {
             worksSlider.destroySlider();
         }
-    }
+    }*/
 }
