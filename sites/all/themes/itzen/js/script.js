@@ -161,8 +161,6 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
-    $(".view-projects.view-display-id-block .view-content").clone().attr('id', 'mPortfolio');
-
     $(".view-how-we-work-tabs.view-display-id-block > .view-content").owlCarousel({
         loop:true,
         margin:10,
@@ -180,7 +178,7 @@ jQuery(document).ready(function ($) {
             }
         }
     });
-    $("#mPortfolio").owlCarousel({
+    $(".view-projects.mobile .view-content").owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -188,12 +186,10 @@ jQuery(document).ready(function ($) {
         navText: [],
         responsive: {
             0 : {
-                items:1,
-                touchDrag: false
+                items:1
             },
             480 : {
-                items:2,
-                touchDrag: true
+                items:2
             }
         }
     });
