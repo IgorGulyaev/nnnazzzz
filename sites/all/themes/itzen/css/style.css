@@ -1241,6 +1241,14 @@ a.btn:hover {
   margin-top: 30px;
   margin-bottom: 0;
 }
+.node .field-name-field-project-type {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.node .field-name-body {
+  margin-bottom: 15px;
+}
+.node {}
 #gallery {
   list-style-type: none;
   padding: 0;

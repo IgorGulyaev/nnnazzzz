@@ -23,6 +23,10 @@ var projectsSlider;
         attach: function (context, settings) {
             var serviceName;
 
+            $('.node-project header h2 a').click(function () {
+                return false
+            });
+
             $('.form-item-submitted-contact-method-select-method input').change(function () {
                 $(this).attr('checked', 'checked').parent('label').attr('data-checked', 'checked');
                 $(this).parents('.form-item').siblings('.form-item').find('input').attr('checked', '').parent('label').attr('data-checked', '');
