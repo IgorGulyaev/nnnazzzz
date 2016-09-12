@@ -1504,12 +1504,12 @@ a.btn:hover {
 .ms-nav-next {
   right: -10px;
 }
-.owl-prev,
+.owl-prev:before,
 .bx-prev:before,
 .ms-nav-prev:before {
   content: "\e915";
 }
-.owl-next,
+.owl-next:before,
 .bx-next:before,
 .ms-nav-next:before {
   content: "\e914";
