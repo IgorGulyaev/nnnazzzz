@@ -2245,6 +2245,9 @@ ul.social li a {
   #gallery .grid-unit {
     width: 49.5%;
   }
+  .view-team.view-display-id-block .views-field-field-team-photo img {
+    max-width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .view-services.view-display-id-block > .view-content {
@@ -2267,6 +2270,9 @@ ul.social li a {
   .view-services.view-display-id-block .views-row {
     padding: 0;
     width: 100%;
+  }
+  .view-team.view-display-id-block .views-field-field-team-photo img {
+    max-width: none;
   }
   .navbar .logo {
     height: 80px;
