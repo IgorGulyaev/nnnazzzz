@@ -161,6 +161,8 @@ jQuery(document).ready(function ($) {
     });
     serviceSlider.control('arrows');
 
+    $(".view-projects.view-display-id-block .view-content").clone().attr('id', 'mPortfolio');
+
     $(".view-how-we-work-tabs.view-display-id-block > .view-content").owlCarousel({
         loop:true,
         margin:10,
@@ -178,6 +180,23 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+    $("#mPortfolio").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+        navText: [],
+        responsive: {
+            0 : {
+                items:1,
+                touchDrag: false
+            },
+            480 : {
+                items:2,
+                touchDrag: true
+            }
+        }
+    });
 
     $(window).resize(checkSize);
 
@@ -185,7 +204,7 @@ jQuery(document).ready(function ($) {
 
 function checkSize(){
     var wW = jQuery(window).width();
-    if (wW <= 480 || jQuery('html').hasClass('mobile')){
+   /* if (wW <= 480 || jQuery('html').hasClass('mobile')){
         projectsSlider = jQuery(".view-projects.view-display-id-block .view-content").bxSlider({
             pager: false,
             prevText: '',
@@ -197,21 +216,6 @@ function checkSize(){
     } else {
         if (jQuery('.bx-wrapper')[0]) {
             projectsSlider.destroySlider();
-        }
-    }
-    /*if (wW <= 768 || jQuery('html').hasClass('mobile')){
-        worksSlider = jQuery(".view-how-we-work-tabs .tab-content").bxSlider({
-            pagerCustom: '#workNav',
-            adaptiveHeight: true,
-            prevText: '',
-            nextText: '',
-            onSlideBefore: function () {
-                jQuery('.view-how-we-work-tabs .nav > li').removeClass('active');
-            }
-        });
-    } else {
-        if (jQuery('.bx-wrapper')[0]) {
-            worksSlider.destroySlider();
         }
     }*/
 }
