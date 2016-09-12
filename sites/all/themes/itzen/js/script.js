@@ -168,7 +168,15 @@ jQuery(document).ready(function ($) {
         items:1,
         dotsContainer: '#workNav',
         paginationNumbers: true,
-        navText: []
+        navText: [],
+        responsive: {
+            0 : {
+                touchDrag: false
+            },
+            560 : {
+                touchDrag: true
+            }
+        }
     });
 
     $(window).resize(checkSize);
