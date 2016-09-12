@@ -2003,6 +2003,8 @@ ul.social li a {
 }
 .node-project header h2 a {
   color: #ffe71e;
+  cursor: default;
+  text-decoration: none !important;
 }
 .node-project {}
 /* END NODE PROJECT */
