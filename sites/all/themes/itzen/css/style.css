@@ -876,7 +876,7 @@ a.btn:hover {
   width: 16.66666666666667%;
   cursor: pointer;
 }
-#workNav > .owl-dot > span > span {
+#workNav > .owl-dot span {
   position: static;
   display: inline-block;
   border: none !important;
@@ -889,8 +889,7 @@ a.btn:hover {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-#workNav > .owl-dot span.active,
-#workNav > .owl-dot.active > span > span {
+#workNav > .owl-dot.active span {
   color: rgba(255,231,30,1);
 }
 #workNav > .owl-dot .label-number {
