@@ -31,6 +31,9 @@ var projectsSlider;
                 $(this).attr('checked', 'checked').parent('label').attr('data-checked', 'checked');
                 $(this).parents('.form-item').siblings('.form-item').find('input').attr('checked', '').parent('label').attr('data-checked', '');
             });
+            $('input[name="submitted[contact_method][phone]"]').focus(function () {
+                $('input[name="submitted[contact_method][select_method]"]').trigger('click');
+            });
             $('input[name*="submitted[contact_method]"]').focus(function () {
                 $('.webform-component--contact-method--select-method').fadeIn();
             });
