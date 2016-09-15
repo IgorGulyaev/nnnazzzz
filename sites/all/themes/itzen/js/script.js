@@ -45,7 +45,7 @@ var projectsSlider;
 
             $('.view-pricing.view-display-id-page_1 .fieldset-title').click(function () {
                 $(this).parent('.views-row').siblings().removeClass('active').find('.tab-content-block').slideUp();
-                if ($(this).hasClass('active') == true) {
+                if ($(this).parent().hasClass('active') == true) {
                     $(this).parent().removeClass('active');
                     $(this).next().slideUp();
                 } else {
