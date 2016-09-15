@@ -729,6 +729,10 @@ a.btn:hover {
   font-size: 30px;
   font-weight: 300;
 }
+.view-pricing.view-display-id-page_1 .views-field-title .field-content:after {
+  display: inline-block;
+  content: 's';
+}
 .view-pricing.view-display-id-page_1 .views-field-field-pricing-duration {
   position: absolute;
   top: 8px;
@@ -1228,12 +1232,6 @@ a.btn:hover {
   /* END WEBFORM */
 
 /* PORTFOLIO */
-#block-views-projects-block .block-title {display: none;}
-#portfolio {
-}
-#portfolio .block-title {
-  display: none !important;
-}
 #portfolio #first-time {
   display: none;
 }
@@ -1464,7 +1462,7 @@ a.btn:hover {
   border-radius: 50%;
   background-color: rgba(255,255,255,0.06);
   color: #ffe71e;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 38px;
   text-align: center;
 }
