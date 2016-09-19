@@ -2606,3 +2606,6 @@ ul.social li a {
     box-shadow: none !important;
 }
 /* END MEDIA QUERIES */
+
+
+.ajax-progress-throbber { display: none !important;}
