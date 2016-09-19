@@ -87,6 +87,13 @@ var projectsSlider;
                     $('.webform-confirmation').parents('.node').find('.links').remove();
                 }
             });
+
+            $(document).on('click', 'form button[type=submit]', function(e) {
+                var isValid = $(e.target).parents('form').isValid();
+                if(!isValid) {
+                    e.preventDefault(); //prevent the default action
+                }
+            });
         }
     };
 
