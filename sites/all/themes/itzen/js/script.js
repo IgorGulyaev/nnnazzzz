@@ -79,7 +79,7 @@ var projectsSlider;
             $('body').on('click', '.webform-confirmation .btn.link', function () {
                 $('#cboxClose').trigger('click');
             });
-            $(document).ajaxComplete(function() {
+            $(document).on('ajaxComplete', function() {
                 if ($('.webform-confirmation')[0]) {
                     $('input[value="phone_method"]').trigger('click');
                     //$('input[value="phone_method"]').parent('label').attr('data-checked', 'checked');
