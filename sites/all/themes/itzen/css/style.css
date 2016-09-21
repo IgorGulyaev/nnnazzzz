@@ -1831,14 +1831,23 @@ footer a {
 .view-projects .project-box {
   display: none;
   height: 100%;
-  padding: 23% 0;
+  /*padding: 23% 0;*/
   left: 0;
   position: absolute;
   text-align: center;
   top: 0;
   width: 100%;
 }
-.view-projects .views-row:hover .project-box {display: block;}
+.view-projects .views-row:hover .project-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .view-projects .views-field-title {
   margin: 10px 0;
   color: #381024;
