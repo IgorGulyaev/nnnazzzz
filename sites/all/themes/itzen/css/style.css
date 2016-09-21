@@ -2103,7 +2103,7 @@ ul.social li a {
     padding: 0 40px;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 991px) {
   #cboxLoadedContent {
     padding: 30px;
   }
@@ -2131,6 +2131,41 @@ ul.social li a {
   }
   .view-pricing.view-display-id-page_1 .views-field-field-pricing-consist-item ul li {
     width: 50%;
+  }
+  #workNav > .owl-dot span {
+    font-size: 16px;
+  }
+  .download {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .download .inner-block + .inner-block {
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  .statistic .inner-block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .statistic .left-side .circle {
+    margin: 0 0 25px;
+  }
+  .statistic .inner-block span {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
