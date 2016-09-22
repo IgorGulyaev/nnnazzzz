@@ -1175,13 +1175,13 @@ a.btn:hover {
 .form-item-submitted-contact-method-select-method label:hover:before {
   color: #0858e4;
 }
-.form-item-submitted-contact-method-select-method label[for="edit-submitted-contact-method-select-method-1"]:before {
+.form-item-submitted-contact-method-select-method:first-child label:before {
   content: "\e901";
 }
-.form-item-submitted-contact-method-select-method label[for="edit-submitted-contact-method-select-method-2"]:before {
+.form-item-submitted-contact-method-select-method:nth-child(2) label:before {
   content: "\e904";
 }
-.form-item-submitted-contact-method-select-method label[for="edit-submitted-contact-method-select-method-3"]:before {
+.form-item-submitted-contact-method-select-method:last-child label:before {
   content: "\e902";
 }
 .form-item-submitted-contact-method-select-method {
