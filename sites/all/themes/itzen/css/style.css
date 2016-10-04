@@ -2197,7 +2197,7 @@ ul.social li a {
     width: 40%;
   }
 }
-@media (min-width: 768px) and (max-width: 920px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header-toll {
     padding: 0;
     width: 20%;
