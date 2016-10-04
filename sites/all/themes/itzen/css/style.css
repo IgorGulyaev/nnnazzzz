@@ -1860,7 +1860,7 @@ footer a {
   font-size: 14px;
 }
 .view-projects .project-links {
-  margin: 50px 0;
+  margin: 50px 0 30px;
   text-align: center;
 }
 .view-projects .project-links .views-field {
@@ -2184,6 +2184,13 @@ ul.social li a {
     font-size: 16px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     width: 100%;
