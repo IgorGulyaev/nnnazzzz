@@ -2199,6 +2199,7 @@ ul.social li a {
 }
 @media (min-width: 768px) and (max-width: 920px) {
   .header-toll {
+    padding: 0;
     width: 20%;
   }
   .navbar > .container > .row > .row-height > .col-middle:first-child {
@@ -2210,6 +2211,12 @@ ul.social li a {
   .navbar-nav > li a {
     padding: 0 12px;
     font-size: 14px;
+  }
+  .navbar-nav > li:first-child a {
+    padding-left: 0;
+  }
+  .navbar-nav > li:last-child a {
+    padding-right: 0;
   }
   .header-toll .inner-block > * {
     display: block;
