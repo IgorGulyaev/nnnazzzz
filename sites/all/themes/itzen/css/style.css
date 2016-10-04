@@ -2218,6 +2218,9 @@ ul.social li a {
   .navbar-nav > li:last-child a {
     padding-right: 0;
   }
+  .navbar-collapse.collapse {
+    padding-right: 0;
+  }
   .header-toll .inner-block > * {
     display: block;
     height: auto;
