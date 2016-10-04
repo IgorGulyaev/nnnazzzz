@@ -2197,6 +2197,25 @@ ul.social li a {
     width: 40%;
   }
 }
+@media (min-width: 768px) and (max-width: 920px) {
+  .header-toll {
+    width: 20%;
+  }
+  .navbar > .container > .row > .row-height > .col-middle:first-child {
+    width: 40%;
+  }
+  .navbar > .container > .row > .row-height > .col-middle:last-child {
+    width: 60%;
+  }
+  .header-toll .inner-block > * {
+    display: block;
+    height: auto;
+  }
+  .header-toll .toll-country {
+    padding-left: 0;
+    line-height: 1;
+  }
+}
 
 @media (max-width: 767px) {
   .container {
