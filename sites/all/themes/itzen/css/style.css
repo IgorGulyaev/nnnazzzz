@@ -2207,6 +2207,10 @@ ul.social li a {
   .navbar > .container > .row > .row-height > .col-middle:last-child {
     width: 60%;
   }
+  .navbar-nav > li a {
+    padding: 0 12px;
+    font-size: 14px;
+  }
   .header-toll .inner-block > * {
     display: block;
     height: auto;
