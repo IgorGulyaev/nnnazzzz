@@ -2189,6 +2189,13 @@ ul.social li a {
   .container {
     width: 95%;
   }
+  .navbar .logo {
+    min-width: 50px;
+    width: 10%;
+  }
+  .header-toll {
+    width: 40%;
+  }
 }
 
 @media (max-width: 767px) {
