@@ -2030,7 +2030,7 @@ ul.social li a {
   cursor: default;
   text-decoration: none !important;
 }
-.node-project .field-name-field-project-goto {
+.node-project .field-name-field-project-goto a {
   display: block;
   color: #ffe71e;
   margin-top: 25px;
