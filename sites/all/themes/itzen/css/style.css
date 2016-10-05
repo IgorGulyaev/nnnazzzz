@@ -1802,7 +1802,8 @@ footer a {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-.view-projects .views-row:hover .views-field-field-project-thumbnail {
+.view-projects .views-row:hover .views-field-field-project-thumbnail,
+.view-projects .views-row:hover .views-field-field-project-thumbnail img {
   border-radius: 50%;
   border-color: transparent;
 }
