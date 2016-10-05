@@ -2229,17 +2229,17 @@ ul.social li a {
     padding-left: 0;
     line-height: 1;
   }
-}
-
-@media (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
   .owl-next, .bx-next, .ms-nav-next {
     right: -30px;
   }
   .owl-prev, .bx-prev, .ms-nav-prev {
     left: -30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
   }
   .navbar-nav {
     float: left;
