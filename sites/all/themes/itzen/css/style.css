@@ -2388,6 +2388,11 @@ ul.social li a {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 767px) and (orientation: portrait) {
+  ul.social {
+    text-align: center;
+  }
+}
 @media (max-width: 767px) and (orientation: landscape) {
   .header-toll .inner-block > * {
     height: 40px;
