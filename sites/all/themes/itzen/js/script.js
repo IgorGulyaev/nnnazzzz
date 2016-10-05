@@ -201,6 +201,10 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $('.navbar-nav > li a').on('click', function () {
+        $('.navbar-toggle').trigger('click');
+    });
+
     $(window).resize(checkSize);
 
 });
