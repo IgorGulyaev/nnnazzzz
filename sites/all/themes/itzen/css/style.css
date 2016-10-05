@@ -2202,6 +2202,11 @@ ul.social li a {
     width: 40%;
   }
 }
+@media (min-width: 768px) and (max-width: 900px) {
+  .footer-contacts .link a {
+    margin-left: -30px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .header-toll {
     padding: 0;
