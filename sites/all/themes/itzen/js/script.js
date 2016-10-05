@@ -175,15 +175,7 @@ jQuery(document).ready(function ($) {
         items:1,
         dotsContainer: '#workNav',
         paginationNumbers: true,
-        navText: [],
-        responsive: {
-            0 : {
-                touchDrag: false
-            },
-            560 : {
-                touchDrag: true
-            }
-        }
+        navText: []
     });
     $(".view-projects.mobile .view-content").owlCarousel({
         loop:true,
