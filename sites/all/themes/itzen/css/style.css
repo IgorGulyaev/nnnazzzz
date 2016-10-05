@@ -2030,6 +2030,11 @@ ul.social li a {
   cursor: default;
   text-decoration: none !important;
 }
+.node-project .field-name-field-project-goto {
+  display: block;
+  color: #ffe71e;
+  margin-top: 25px;
+}
 .node-project {}
 /* END NODE PROJECT */
 
@@ -2321,6 +2326,9 @@ ul.social li a {
     display: -webkit-flex;
     display: flex;
     padding-left: 10%;
+  }
+  .node-project header h2 a {
+    font-size: 26px;
   }
   .statistic {
     padding: 0 10%;
