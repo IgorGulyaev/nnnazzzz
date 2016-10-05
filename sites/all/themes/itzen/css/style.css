@@ -2392,6 +2392,9 @@ ul.social li a {
   ul.social {
     text-align: center;
   }
+  .view-team.view-display-id-block .views-field-description {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) and (orientation: landscape) {
   .header-toll .inner-block > * {
