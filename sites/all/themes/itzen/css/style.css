@@ -2278,6 +2278,9 @@ ul.social li a {
   .view-services.view-display-id-block .views-row {
     margin-bottom: 20px;
   }
+  #block-views-projects-block {
+    display: none;
+  }
   /*.view-projects .view-content {
     width: 120vw;
   }*/
