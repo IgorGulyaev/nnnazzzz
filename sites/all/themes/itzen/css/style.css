@@ -2235,6 +2235,12 @@ ul.social li a {
   .container {
     width: 100%;
   }
+  .owl-next, .bx-next, .ms-nav-next {
+    right: -30px;
+  }
+  .owl-prev, .bx-prev, .ms-nav-prev {
+    left: -30px;
+  }
   .navbar-nav {
     float: left;
     text-align: left;
