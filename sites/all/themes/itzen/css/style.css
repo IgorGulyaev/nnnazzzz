@@ -2398,6 +2398,10 @@ ul.social li a {
   .navbar-toggle {
     margin-top: 0;
   }
+  .navbar-nav > li a {
+    height: 40px;
+    line-height: 40px;
+  }
 }
 @media (max-width: 643px) {
   .header-toll .toll-country {
