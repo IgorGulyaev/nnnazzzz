@@ -2388,6 +2388,17 @@ ul.social li a {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 767px) and (orientation: landscape) {
+  .header-toll .inner-block > * {
+    height: 40px;
+  }
+  .header-toll .toll-country {
+    line-height: 40px;
+  }
+  .navbar-toggle {
+    margin-top: 0;
+  }
+}
 @media (max-width: 643px) {
   .header-toll .toll-country {
     padding: 12px;
