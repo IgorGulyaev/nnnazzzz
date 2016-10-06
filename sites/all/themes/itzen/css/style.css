@@ -1765,7 +1765,9 @@ footer a {
 /* END FOOTER */
 
 /* CUSTOM */
-.view-projects {}
+.view-projects {
+  margin-top: 30px;
+}
 .view-projects .owl-controls {
   width: 100%;
 }
