@@ -1,0 +1,346 @@
+<?php
+/**
+ * @file
+ * Better Field Formatters code.
+ */
+
+/**
+ * Implements hook_field_formatter_info()
+ */
+function better_field_formatters_field_formatter_info() {
+  $formatters['custom_date'] = array(
+    'label' => t('Custom Date'),
+    'field types' => array('date', 'datetime', 'datestamp'),
+    'description' => t('Custom format date'),
+    'settings' => array(
+      'date_format' => 'M j, Y',
+      'timezone' => NULL,
+    ),
+  );
+
+  $formatters['is_past'] = array(
+    'label' => t('Is Past'),
+    'field types' => array('date', 'datetime', 'datestamp'),
+    'description' => t('Display different text if the date has past or not'),
+    'settings' => array(
+      'past_text' => 'Past',
+      'present_text' => 'Present',
+      'future_text' => 'Future',
+    ),
+  );
+
+  $formatters['better_summary'] = array(
+    'label' => t('Better summary text'),
+    'field types' => array('text', 'text_long', 'text_with_summary'),
+    'settings' => array(
+      'trim_length' => 600,
+      'word_boundary' => TRUE,
+      'ellipsis' => FALSE,
+      'strip_tags' => TRUE,
+      'preserve_tags' => '',
+      'cleanup' => TRUE,
+      'html' => TRUE,
+    ),
+  );
+
+  return $formatters;
+}
+
+/**
+ * Implements hook_field_formatter_settings_form()
+ */
+function better_field_formatters_field_formatter_settings_form($field, $instance, $view_mode, $form, &$form_state) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+
+  switch ($display['type']) {
+    case 'custom_date':
+      $element['date_format'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Format'),
+        '#default_value' => $settings['date_format'],
+        '#description' => t('See php.net/date for formatting options.'),
+      );
+      $zones = array(
+        'current_user_timezone' => t('Current users timezone'),
+        'dates_timezone' => t('Date fields default timezone'),
+      );
+      $zones += system_time_zones();
+      $element['timezone'] = array(
+        '#type' => 'select',
+        '#title' => t('Timezone'),
+        '#default_value' => $settings['timezone'],
+        '#options' => $zones,
+      );
+      break;
+
+    case 'is_past':
+      $element['past_text'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Past text'),
+        '#default_value' => $settings['past_text'],
+        '#description' => t('Text to display if the date is in the past.'),
+      );
+
+      $element['present_text'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Present text'),
+        '#default_value' => $settings['present_text'],
+        '#description' => t('Text to display if the date is today.'),
+      );
+
+      $element['future_text'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Future text'),
+        '#default_value' => $settings['future_text'],
+        '#description' => t('Text to display if the date is in the future.'),
+      );
+      break;
+
+    case 'better_summary':
+      $element['trim_length'] = array(
+        '#title' => t('Trim length'),
+        '#type' => 'textfield',
+        '#size' => 10,
+        '#default_value' => $settings['trim_length'],
+        '#element_validate' => array('element_validate_integer_positive'),
+        '#required' => TRUE,
+      );
+      $element['word_boundary'] = array(
+        '#title' => t('Trim only on a word boundary'),
+        '#type' => 'checkbox',
+        '#default_value' => $settings['word_boundary'],
+      );
+      $element['ellipsis'] = array(
+        '#title' => t('Add an ellipsis'),
+        '#type' => 'checkbox',
+        '#default_value' => $settings['ellipsis'],
+      );
+      $element['html'] = array(
+        '#title' => t('May contain HTML'),
+        '#description' => t('If checked, HTML corrector will be run to ensure tags are properly closed after trimming.'),
+        '#type' => 'checkbox',
+        '#default_value' => $settings['html'],
+      );
+      $element['strip_tags'] = array(
+        '#title' => t('Strip HTML tags'),
+        '#type' => 'checkbox',
+        '#default_value' => $settings['strip_tags'],
+      );
+      $element['preserve_tags'] = array(
+        '#title' => t('Preserve certain tags'),
+        '#description' => t('List the tags that need to be preserved during the stripping process. example "&lt;p&gt; &lt;br&gt;" which will preserve all p and br elements'),
+        '#type' => 'textfield',
+        '#default_value' => $settings['preserve_tags'],
+      );
+      $element['cleanup'] = array(
+        '#title' => t('Perform cleanup'),
+        '#description' => t('If checked, additional cleanup will be performed like removing extra whitespace.'),
+        '#type' => 'checkbox',
+        '#default_value' => $settings['cleanup'],
+      );
+      break;
+  }
+
+  return $element;
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary()
+ */
+function better_field_formatters_field_formatter_settings_summary($field, $instance, $view_mode) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+  switch ($display['type']) {
+    case 'custom_date':
+      $output = t('Date format: @format in timezone: @zone', array(
+        '@format' => $settings['date_format'],
+        '@zone' => $settings['timezone'],
+      ));
+      break;
+
+    case 'is_past':
+      $output = t('If past: @past; present: @present; future: @future', array(
+        '@past' => $settings['past_text'],
+        '@present' => $settings['present_text'],
+        '@future' => $settings['future_text'],
+      ));
+      break;
+
+    case 'better_summary':
+      $output = t('Trim length: @length', array(
+        '@length' => $settings['trim_length'],
+      ));
+      break;
+  }
+
+  return $output;
+}
+
+/**
+ * Implements hook_field_formatter_view()
+ */
+function better_field_formatters_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  $settings = $display['settings'];
+
+  switch ($display['type']) {
+    case 'custom_date':
+      if ($settings['timezone'] === 'current_user_timezone') {
+        $timezone = date_default_timezone_get();
+      }
+      else {
+        $timezone = $settings['timezone'];
+      }
+      foreach ($items as $delta => $item) {
+        // Legacy formatters didn't have a timezone, we want to use the
+        // date field's default in that case.
+        if (!isset($settings['timezone']) || $settings['timezone'] === 'dates_timezone') {
+          $timezone = $item['timezone'];
+        }
+        $date_obj = new DateObject($item['value'], $item['timezone_db']);
+        $date_obj->setTimezone(new DateTimeZone($timezone));
+        $time = date_format_date($date_obj, 'custom', $settings['date_format']);
+        $element[$delta] = array(
+          '#markup' => $time,
+        );
+      }
+      break;
+
+    case 'is_past':
+      foreach ($items as $delta => $item) {
+        $date_obj = new DateObject($item['value'], $item['timezone_db']);
+        $date_obj->setTimezone(new DateTimeZone($item['timezone']));
+        $time = date_format_date($date_obj, 'custom', 'U');
+
+        if ($time > REQUEST_TIME) {
+          $text = check_plain($settings['future_text']);
+        }
+        elseif ($time == REQUEST_TIME) {
+          $text = check_plain($settings['present_text']);
+        }
+        else {
+          $text = check_plain($settings['past_text']);
+        }
+        $element[$delta] = array(
+          '#markup' => $text,
+        );
+      }
+      break;
+
+    case 'better_summary':
+      foreach ($items as $delta => $item) {
+        $output = '';
+
+        if ($instance['settings']['text_processing'] && isset($item['format'])) {
+          $settings['format'] = $item['format'];
+        }
+
+        if (!empty($item['summary'])) {
+          $output = better_field_formatters_text_summary($item['summary'], $settings);
+        }
+
+        // When the summary is empty, use the original text.
+        if (empty($output)) {
+          $output = better_field_formatters_text_summary($item['value'], $settings);
+        }
+
+        $element[$delta] = array(
+          '#markup' => $output,
+        );
+      }
+      break;
+  }
+
+  return $element;
+}
+
+/**
+ * Better summary text.
+ *
+ * @param string $value
+ *   The original text to create a summary of.
+ * @param array $options
+ *   An array of options.
+ */
+function better_field_formatters_text_summary($value, $options = array()) {
+  // Set default options.
+  $options += array(
+    'trim_length' => 600,
+    'word_boundary' => TRUE,
+    'ellipsis' => FALSE,
+    'strip_tags' => TRUE,
+    'preserve_tags' => '',
+    'cleanup' => TRUE,
+    'format' => FALSE,
+    'html' => TRUE,
+  );
+
+  // Strip all but the allowed tags first.
+  if ($options['strip_tags']) {
+    $value = strip_tags($value, $options['preserve_tags']);
+  }
+
+  // Perform any other cleanup first.
+  if ($options['cleanup']) {
+    drupal_alter('better_field_formatters_text_summary', $value, $options);
+  }
+
+  // Apply any text format rules.
+  if ($options['format']) {
+    $value = check_markup($value, $options['format']);
+  }
+  else {
+    $value = check_plain($value);
+  }
+
+  // Stolen from views_trim_text()
+  if (drupal_strlen($value) > $options['trim_length']) {
+    $value = drupal_substr($value, 0, $options['trim_length']);
+    if (!empty($options['word_boundary'])) {
+      $regex = "(.*)\b.+";
+      if (function_exists('mb_ereg')) {
+        mb_regex_encoding('UTF-8');
+        $found = mb_ereg($regex, $value, $matches);
+      }
+      else {
+        $found = preg_match("/$regex/us", $value, $matches);
+      }
+      if ($found) {
+        $value = $matches[1];
+      }
+    }
+    // Remove scraps of HTML entities from the end of a strings
+    $value = rtrim(preg_replace('/(?:<(?!.+>)|&(?!.+;)).*$/us', '', $value));
+
+    if (!empty($options['ellipsis'])) {
+      $value .= t('...');
+    }
+  }
+  if (!empty($options['html'])) {
+    $value = _filter_htmlcorrector($value);
+  }
+
+  return $value;
+}
+
+// Check for media implementation.
+if (!function_exists('media_better_field_formatters_text_summary_alter')) {
+  /**
+   * Implements hook_better_field_formatters_text_summary_alter().
+   */
+  function media_better_field_formatters_text_summary_alter(&$value, $options) {
+    if (defined('MEDIA_WYSIWYG_TOKEN_REGEX')) {
+      $value = preg_replace(MEDIA_WYSIWYG_TOKEN_REGEX, '', $value);
+    }
+  }
+}
+
+/**
+ * Implements hook_better_field_formatters_text_summary_alter().
+ */
+function better_field_formatters_better_field_formatters_text_summary_alter(&$value, $options) {
+  // Remove multiple whitespace characters.
+  $value = preg_replace('/(\s|&nbsp;)+/', ' ', $value);
+  $value = trim($value);
+}

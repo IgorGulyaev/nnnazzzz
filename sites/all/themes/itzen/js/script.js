@@ -43,15 +43,12 @@ var projectsSlider;
                 }
             });
 
-            $('.view-pricing.view-display-id-page_1 .fieldset-title').click(function () {
-                if ($(this).parent().hasClass('active') == true) {
-                    $(this).parent().removeClass('active');
-                    $(this).next().slideUp();
-                } else {
-                    $(this).parent().addClass('active');
-                    $(this).next().slideDown();
-                }
-                $(this).parent('.views-row').siblings().removeClass('active').find('.tab-content-block').slideUp();
+            $('.view-pricing.view-display-id-page_1 .fieldset-title').click(function (e) {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+				$(this).parent().siblings().removeClass('active').find('.tab-content-block').slideUp();
+				$(this).parent().toggleClass('active');
+                $(this).next().slideToggle();
             });
 
             $('.view-pricing.view-display-id-page_1 .views-field-nothing a').click(function () {

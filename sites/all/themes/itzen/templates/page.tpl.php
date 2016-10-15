@@ -133,14 +133,16 @@
   </div>
 </nav>
 <section id="<?php echo theme_get_setting('region_anchor-home') ?>" class="region-home-bg">
-    <div class="container">
+    <?php
+    if (drupal_is_front_page()) {
+        ?><div class="container">
         <div class="row text-center">
             <div class="col-sm-12">
                 <?php if (!empty($site_name)): ?>
                     <h1 class="site-name"><?php print $site_name; ?> </h1>
                 <?php endif; ?>
                 <?php if (!empty($site_slogan)): ?>
-                  <p class="text-extra-large"><?php print $site_slogan; ?> </p>
+                    <p class="text-extra-large"><?php print $site_slogan; ?> </p>
                 <?php endif; ?>
                 <div class="home-info">
                     <?php print t('web'); ?>
@@ -154,7 +156,17 @@
                 </div>
             </div>
         </div>
-    </div> 
+        </div> <?php
+    } else { ?>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <p class="text-extra-large"><?php print drupal_get_title(); ?> </p>
+                </div>
+            </div>
+        </div>
+    <?php }
+    ?>
 </section>
 <?php 
   if ($page['header']):
