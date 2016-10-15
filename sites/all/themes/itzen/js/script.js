@@ -44,7 +44,6 @@ var projectsSlider;
             });
 
             $('.view-pricing.view-display-id-page_1 .fieldset-title').click(function () {
-                $(this).parent('.views-row').siblings().removeClass('active').find('.tab-content-block').slideUp();
                 if ($(this).parent().hasClass('active') == true) {
                     $(this).parent().removeClass('active');
                     $(this).next().slideUp();
@@ -52,6 +51,7 @@ var projectsSlider;
                     $(this).parent().addClass('active');
                     $(this).next().slideDown();
                 }
+                $(this).parent('.views-row').siblings().removeClass('active').find('.tab-content-block').slideUp();
             });
 
             $('.view-pricing.view-display-id-page_1 .views-field-nothing a').click(function () {
