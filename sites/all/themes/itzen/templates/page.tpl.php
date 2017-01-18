@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </section>
 <?php 
   if ($page['header']):
@@ -189,7 +189,7 @@
 </div>
 
 <?php if($page["prefix"]): ?>
-<section id="portfolio" class="region-prefix-bg wow zoomIn">
+<section id="projects" class="region-prefix-bg wow zoomIn">
     <div class="container">
         <?php print render($page['prefix']); ?>
     </div>
