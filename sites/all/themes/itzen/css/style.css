@@ -2442,7 +2442,7 @@ ul.social li a {
 
 @media (max-width: 767px) {
   .navbar .logo {
-    height: 80px;
+    height: 66px;
   }
   .container {
     width: 100%;
@@ -2661,6 +2661,9 @@ ul.social li a {
   }
 }
 @media (max-width: 480px) {
+  .navbar .logo {
+    height: 80px;
+  }
   .header-toll .toll-country {
     padding: 32px;
   }
