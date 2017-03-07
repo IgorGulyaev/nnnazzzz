@@ -6,7 +6,9 @@ sites/*/files
 sites/*/private
 
 docs/
-text
+test/
 .idea/
+.idea/*.*
+.idea/workspace.xml
 
 google636c72147aa07592.html

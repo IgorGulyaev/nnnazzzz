@@ -1857,7 +1857,6 @@ footer a {
 }
 .view-projects .views-row:hover .views-field-field-project-thumbnail,
 .view-projects .views-row:hover .views-field-field-project-thumbnail img {
-  border-radius: 50%;
   border-color: transparent;
 }
 .view-projects .views-row .views-field-field-project-thumbnail:after {
@@ -1878,9 +1877,6 @@ footer a {
 }
 .view-projects .views-row:hover .views-field-field-project-thumbnail:after {
   opacity: .75;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
 }
 .view-projects .project-box {
   display: none;
