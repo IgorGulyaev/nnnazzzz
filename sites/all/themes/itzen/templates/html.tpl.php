@@ -53,6 +53,8 @@
 <head profile="<?php print $grddl_profile; ?>">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zen Studio. We know your benefits.">
+  <meta name="keywords" content="US web design, Canada web design, USA, Canada, website in Canada, website in US, United States, Canada, clean design, web development, web developer, modern web design, html5, html5 developer, html5 designer, freelance html5, html5 designer, html5 website design, css3, front end, front-end, front end developer, front end development, wordpress, wordpress developer, wordpress design, typography, developer, programmer, web solution, e-commerce, content management systems, web design, multimedia design, internet site design, создание сайтов, продвижение сайтов, разработка сайтов, заказать создание, заказать продвижение, интернет магазин, разработка сайтов, сайты, zen, дзен, создание web сайтов, разработка сайта цена, разработка интернет сайта, создание и разработка сайтов, создать web сайт, разработка корпоративного сайта, разработка сайтов под ключ, разработка и продвижение сайтов, сайт визитка, web дизайн сайта, заказать создание сайта, заказать сайт, изготовление сайтов, интернет магазин, интернет портал, корпоративный сайт, создать блог, создать сайт, веб студия, веб-студия, web студия, web-студия, сделать сайт">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet" type="text/css">

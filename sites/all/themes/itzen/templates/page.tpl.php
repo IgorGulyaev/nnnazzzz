@@ -88,10 +88,10 @@
                             <?php endif; ?>
                             <div class="header-toll col-height col-xs-9 col-sm-4 col-middle">
                                 <div class="inner-block">
-                                    <a href="tel:18884146654" class="toll-tel"><span><i class="icon-zen_contact_phone"></i> 1 888 </span>414 6654</a>
+                                    <a href="tel:+380994959282" class="toll-tel"><span><i class="icon-zen_contact_phone"></i> +38 099 </span>495 9282</a>
                                     <span>
-                                        <span class="toll-country"><?php print t('USA/Canada'); ?></span>
-                                        <span class="toll-label"><?php print t('Toll Free'); ?></span>
+                                        <span class="toll-country"><?php print t('Ukraine'); ?></span>
+                                        <!--<span class="toll-label"><?php /*print t('Toll Free'); */?></span>-->
                                     </span>
                                 </div>
                             </div>
@@ -133,14 +133,16 @@
   </div>
 </nav>
 <section id="<?php echo theme_get_setting('region_anchor-home') ?>" class="region-home-bg">
-    <div class="container">
+    <?php
+    if (drupal_is_front_page()) {
+        ?><div class="container">
         <div class="row text-center">
             <div class="col-sm-12">
                 <?php if (!empty($site_name)): ?>
                     <h1 class="site-name"><?php print $site_name; ?> </h1>
                 <?php endif; ?>
                 <?php if (!empty($site_slogan)): ?>
-                  <p class="text-extra-large"><?php print $site_slogan; ?> </p>
+                    <p class="text-extra-large"><?php print $site_slogan; ?> </p>
                 <?php endif; ?>
                 <div class="home-info">
                     <?php print t('web'); ?>
@@ -150,11 +152,21 @@
                     <?php print t('relax'); ?>
                 </div>
                 <div class="link">
-                    <a href="#portfolio" class="btn"><?php print t('Portfolio'); ?></a>
+                    <a href="#projects" class="btn"><?php print t('Projects'); ?></a>
                 </div>
             </div>
         </div>
-    </div> 
+        </div> <?php
+    } else { ?>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <p class="text-extra-large"><?php print drupal_get_title(); ?> </p>
+                </div>
+            </div>
+        </div>
+    <?php }
+    ?>
 </section>
 <?php 
   if ($page['header']):
@@ -189,7 +201,7 @@
 </div>
 
 <?php if($page["prefix"]): ?>
-<section id="portfolio" class="region-prefix-bg wow zoomIn">
+<section id="projects" class="region-prefix-bg wow zoomIn">
     <div class="container">
         <?php print render($page['prefix']); ?>
     </div>

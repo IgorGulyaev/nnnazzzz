@@ -53,6 +53,13 @@ function svg_embed_menu() {
     'type' => MENU_LOCAL_TASK,
     'weight' => 99,
   );
+  $items['svg-embed/%/%file/fallback.png'] = array(
+    'title' => 'Fallback PNG',
+    'page callback' => 'svg_embed_fallback_png',
+    'page arguments' => array(1, 2),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
   return $items;
 }
 
@@ -77,22 +84,13 @@ function svg_embed_filter_svg_embed_process($text, $filter, $format, $langcode, 
       else {
         $field = 'filename';
       }
-      $uri = db_select('file_managed', 'f')
-        ->fields('f', array('uri'))
+      $file = db_select('file_managed', 'f')
+        ->fields('f', array('fid', 'uri'))
         ->condition('f.' . $field, $match[1])
         ->execute()
-        ->fetchField();
-      if ($uri) {
-        $svg = file_get_contents($uri);
-        if (!empty($svg)) {
-          $xml = new SimpleXMLElement($svg);
-          if (!empty($xml)) {
-            if ($langcode != LANGUAGE_NONE) {
-              _svg_embed_translate($xml, $langcode);
-            }
-            $text = str_replace('[svg:' . $match[1] . ']', $xml->asXML(), $text);
-          }
-        }
+        ->fetch();
+      if (!empty($file)) {
+        $text = str_replace('[svg:' . $match[1] . ']', _svg_embed_get_svg($file, $langcode), $text);
       }
     }
 
@@ -164,7 +162,8 @@ function svg_embed_manage_po_files($form, $form_state) {
   }
   $directory = 'temporary://svg_embed';
   file_prepare_directory($directory, FILE_CREATE_DIRECTORY + FILE_MODIFY_PERMISSIONS);
-  $languages = array_shift(language_list('enabled'));
+  $all_languages = language_list('enabled');
+  $languages = array_shift($all_languages);
   $output = '';
   foreach ($languages as $langcode => $item) {
     $po = 'msgid ""' . PHP_EOL;
@@ -257,6 +256,56 @@ function svg_embed_manage_po_files_submit($form, &$form_state) {
 }
 
 /**
+ * Menu callback to localise and convert the SVG to PNG which will then be
+ * delivered to the requesting browser.
+ *
+ * @param string $langcode
+ * @param stdClass $file
+ */
+function svg_embed_fallback_png($langcode, $file) {
+  if (!class_exists('Imagick')) {
+    drupal_not_found();
+    exit;
+  }
+
+  $svg = _svg_embed_get_svg($file, $langcode, FALSE);
+  $im = new Imagick();
+  $im->readImageBlob($svg);
+  $im->setImageFormat("png24");
+  header("Content-Type: image/png");
+  print $im->getImagesBlob();
+  exit;
+}
+
+/**
+ * Helper function to read the SCG, localise it and prepare it for output.
+ *
+ * @param stdClass $file
+ * @param string $langcode
+ * @param bool $include_fallback
+ * @return string
+ */
+function _svg_embed_get_svg($file, $langcode, $include_fallback = TRUE) {
+  $svg = file_get_contents($file->uri);
+  if (!empty($svg)) {
+    $xml = new SimpleXMLElement($svg);
+    if (!empty($xml)) {
+      if ($langcode != LANGUAGE_NONE) {
+        _svg_embed_translate($xml, $langcode);
+      }
+      if ($include_fallback && class_exists('Imagick')) {
+        $fallback = $xml->addChild('image');
+        $fallback->addAttribute('src', url('svg-embed/' . $langcode . '/' . $file->fid . '/fallback.png'));
+      }
+      $svg = $xml->asXML();
+      $svg_tag = strpos($svg, '<svg');
+      return $include_fallback ? substr($svg, $svg_tag) : $svg;
+    }
+  }
+  return '';
+}
+
+/**
  * Helper function called recursively to translate all strings in an SVG file.
  *
  * @param SimpleXMLElement $xml
@@ -267,8 +316,16 @@ function svg_embed_manage_po_files_submit($form, &$form_state) {
 function _svg_embed_translate($xml, $langcode) {
   foreach ($xml as $child) {
     _svg_embed_translate($child, $langcode);
-    if (isset($child->text)) {
-      $text = $child->text;
+    if (isset($child->text) || isset($child->tspan)) {
+      if (isset($child->text->tspan)) {
+        $text = $child->text->tspan;
+      }
+      elseif (isset($child->tspan)) {
+        $text = $child->tspan;
+      }
+      else {
+        $text = $child->text;
+      }
       $i = 0;
       while (TRUE) {
         $string = (string) $text[$i];
@@ -302,11 +359,20 @@ function _svg_embed_translate($xml, $langcode) {
  *   array containing all strings and translations
  */
 function _svg_embed_extract($xml, &$strings) {
-  $languages = array_shift(language_list('enabled'));
+  $all_languages = language_list('enabled');
+  $languages = array_shift($all_languages);
   foreach ($xml as $child) {
     _svg_embed_extract($child, $strings);
-    if (isset($child->text)) {
-      $text = $child->text;
+    if (isset($child->text) || isset($child->tspan)) {
+      if (isset($child->text->tspan)) {
+        $text = $child->text->tspan;
+      }
+      elseif (isset($child->tspan)) {
+        $text = $child->tspan;
+      }
+      else {
+        $text = $child->text;
+      }
       $i = 0;
       while (TRUE) {
         $string = (string) $text[$i];
