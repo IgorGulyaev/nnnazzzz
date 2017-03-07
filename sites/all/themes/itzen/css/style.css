@@ -2070,6 +2070,9 @@ ul.social li a {
 /* END FOOTER */
 
 /* NODE PROJECT */
+.node-project {
+  text-align: center;
+}
 .node-project header h2,
 .node-project .field-name-field-project-milestone-title {
   margin-top: 40px;
@@ -2088,6 +2091,47 @@ ul.social li a {
   color: #ffe71e;
   margin-top: 25px;
 }
+.node-project .field-name-field-test .field-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.node-project .field-name-field-test h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.node-project .field-name-field-test h2 a {
+  pointer-events: none !important;
+}
+.node-project .field-name-field-test .taxonomy-term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.node-project .field-name-field-test .taxonomy-term img {
+  width: 22px;
+}
+.node-project .field-name-field-test {}
 .node-project {}
 /* END NODE PROJECT */
 
