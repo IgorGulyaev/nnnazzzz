@@ -152,7 +152,7 @@
                     <?php print t('relax'); ?>
                 </div>
                 <div class="link">
-                    <a href="#portfolio" class="btn"><?php print t('Portfolio'); ?></a>
+                    <a href="#projects" class="btn"><?php print t('Projects'); ?></a>
                 </div>
             </div>
         </div>
