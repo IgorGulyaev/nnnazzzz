@@ -2202,6 +2202,12 @@ ul.social li a {
   font-size: 20px;
   font-weight: 300;
 }
+.node-project a.btn.colorbox-node {
+  margin-top: 50px;
+}
+.node-project fieldset + a.btn.colorbox-node {
+  margin-top: 0;
+}
 .node-project .colorbox-node .field {
   display: none !important;
 }
