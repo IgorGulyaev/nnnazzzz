@@ -2124,6 +2124,10 @@ ul.social li a {
   color: #198eff;
   font-size: 16px;
 }
+.node-project .field-collection-container {
+  margin: 0;
+  border: none;
+}
 .node-project .field-name-field-test .field-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2147,6 +2151,11 @@ ul.social li a {
 }
 .node-project .field-name-field-test h2 a {
   pointer-events: none !important;
+}
+.node-project .field-name-field-test .field-collection-view {
+  padding: 0;
+  margin: 0 40px;
+  border: none;
 }
 .node-project .field-name-field-test .taxonomy-term {
   display: -webkit-box;
@@ -2187,6 +2196,7 @@ ul.social li a {
 .node-project .panel-heading {
   padding: 0;
   margin-top: 75px;
+  margin-bottom: 21px;
   background: none;
   color: #a7a6a7;
   font-size: 20px;
