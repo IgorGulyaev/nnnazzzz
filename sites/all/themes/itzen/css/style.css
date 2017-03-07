@@ -803,9 +803,16 @@ body.node-type-blog-item .region-content-bg {
 }
 .view-pricing.view-display-id-page_1 .views-field-field-pricing-price {
   float: right;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 46px;
   color: #ffe71e;
+}
+.view-pricing.view-display-id-page_1 .views-row .views-field-field-pricing-price .price:after {
+  content: 'more';
+}
+.view-pricing.view-display-id-page_1 .views-row.active .views-field-field-pricing-price .price:after {
+  content: 'less';
 }
 .view-pricing.view-display-id-page_1 .tab-content-block {
   clear: both;
