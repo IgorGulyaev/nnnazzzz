@@ -7,9 +7,9 @@ project = svg_embed
 dependencies[] = filter
 dependencies[] = locale
 
-; Information added by Drupal.org packaging script on 2014-03-10
-version = "7.x-1.1"
+; Information added by Drupal.org packaging script on 2016-11-28
+version = "7.x-1.2"
 core = "7.x"
 project = "svg_embed"
-datestamp = "1394470109"
+datestamp = "1480318687"
 
