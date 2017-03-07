@@ -1017,7 +1017,8 @@ body.node-type-blog-item .region-content-bg {
 
 #workNav > .owl-dot:hover .label-number {
   border-color: #198eff;
-  background-color: #198eff;
+  border-style: solid;
+  background-color: #198eff !important;
 }
 #workNav > .owl-dot:hover .label-text {
   color: #198eff;
