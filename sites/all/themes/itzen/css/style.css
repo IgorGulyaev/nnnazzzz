@@ -1056,6 +1056,10 @@ body.node-type-blog-item .region-content-bg {
 .view-how-we-work .steps-block .field-name-field-soft-icon {
   margin-right: 20px;
 }
+.view-how-we-work-tabs .steps-block .field-name-field-soft-icon img,
+.view-how-we-work .steps-block .field-name-field-soft-icon img {
+  width: 30px;
+}
 .view-how-we-work-tabs .steps-block .field-name-field-soft-name,
 .view-how-we-work .steps-block .field-name-field-soft-name {
   font-size: 15px;
