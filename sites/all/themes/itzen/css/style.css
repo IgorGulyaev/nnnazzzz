@@ -1999,7 +1999,7 @@ footer a {
   list-style: none;
   font-size: 18px;
 }
-.footer-toll .block-info ul li {
+.footer-toll + .block-info ul li {
   margin-bottom: -15px;
 }
 .block-info ul li i {
@@ -2662,7 +2662,7 @@ ul.social li a {
   .view-services.view-display-id-block_1 {
     display: none !important;
   }
-  .footer-toll .block-info ul li {
+  .footer-toll + .block-info ul li {
     margin-top: 35px;
     margin-left: -10px;
   }
