@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dc67240-e0bb-48d3-a790-3b8d41579b5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/itzen/templates/page.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/itzen/templates/page.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/itzen/css/style.css" afterPath="$PROJECT_DIR$/sites/all/themes/itzen/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/itzen/js/script.js" afterPath="$PROJECT_DIR$/sites/all/themes/itzen/js/script.js" />
     </list>
     <ignored path="public_html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page.tpl.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/templates/page.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="95" column="41" selection-start-line="89" selection-start-column="32" selection-end-line="95" selection-end-column="41" />
+            <state relative-caret-position="119">
+              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1004">
-              <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
+            <state relative-caret-position="647">
+              <caret line="64" column="186" selection-start-line="64" selection-start-column="186" selection-end-line="64" selection-end-column="186" />
               <folding />
             </state>
           </provider>
@@ -60,8 +61,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="2146" column="18" selection-start-line="2146" selection-start-column="18" selection-end-line="2146" selection-end-column="18" />
+            <state relative-caret-position="633">
+              <caret line="2204" column="0" selection-start-line="2204" selection-start-column="0" selection-end-line="2204" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -113,12 +114,12 @@
         <option value="$PROJECT_DIR$/sites/all/modules/colorbox/js/colorbox.js" />
         <option value="$PROJECT_DIR$/sites/all/themes/itzen/templates/test.html" />
         <option value="$PROJECT_DIR$/sites/all/themes/itzen/css/fonts.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/itzen/js/script.js" />
         <option value="$PROJECT_DIR$/../../ad.loc/public_html/wp-config.php" />
         <option value="$PROJECT_DIR$/../../ad.loc/public_html/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/sites/all/themes/itzen/css/style.css" />
         <option value="$PROJECT_DIR$/sites/all/themes/itzen/templates/page.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/itzen/css/style.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/itzen/js/script.js" />
       </list>
     </option>
   </component>
@@ -261,12 +262,12 @@
       <workItem from="1475785584669" duration="1454000" />
       <workItem from="1476562309415" duration="8000" />
       <workItem from="1476562326406" duration="2216000" />
-      <workItem from="1488848444374" duration="7463000" />
+      <workItem from="1488848444374" duration="8235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105917000" />
+    <option name="totallyTimeSpent" value="106689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -409,14 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1004">
-          <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
@@ -441,18 +434,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/templates/page.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="2146" column="18" selection-start-line="2146" selection-start-column="18" selection-end-line="2146" selection-end-column="18" />
+        <state relative-caret-position="119">
+          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/templates/page.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="95" column="41" selection-start-line="89" selection-start-column="32" selection-end-line="95" selection-end-column="41" />
+        <state relative-caret-position="633">
+          <caret line="2204" column="0" selection-start-line="2204" selection-start-column="0" selection-end-line="2204" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="64" column="186" selection-start-line="64" selection-start-column="186" selection-end-line="64" selection-end-column="186" />
           <folding />
         </state>
       </provider>

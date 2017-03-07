@@ -51,6 +51,23 @@ var projectsSlider;
                 $(this).next().slideToggle();
             });
 
+            $('.node-project a.colorbox-node').click(function () {
+                serviceName = $(this).parents('.node-project').find('header h2 a').text();
+                $(document).ajaxComplete(function(aj) {
+                    if ($('.node-webform')[0]) {
+                        $('input[name="submitted[service_name]"]').attr('value', serviceName);
+                        if ($('.service-choose')[0]) {
+                            if ($('.service-choose .service-name').text() == serviceName) {
+                            } else {
+                                $('.service-choose .service-name').text(serviceName);
+                            }
+                        } else {
+                            $('.webform-client-form > div').prepend('<div class="service-choose">You are Interested in <span class="service-name">'+ serviceName +'</span> similar Website<span class="service-remove"><i class="icon-zen_navigation_close"></i></span></div>');
+                        }
+                    }
+                });
+            });
+
             $('.view-pricing.view-display-id-page_1 .views-field-nothing a').click(function () {
                 serviceName = $(this).parents('.views-row').find('.views-field-title .field-content').text();
                 $(document).ajaxComplete(function(aj) {
