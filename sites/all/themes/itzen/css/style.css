@@ -2825,3 +2825,11 @@ ul.social li a {
 
 
 .ajax-progress-throbber { display: none !important;}
+
+.b24-widget-button-block .b24-widget-button-inner-block {
+  background: #ffe71e !important;
+}
+.b24-widget-button-block .b24-widget-button-inner-block svg,
+.b24-widget-button-block .b24-widget-button-inner-block svg path {
+  fill: #160616 !important;
+}
