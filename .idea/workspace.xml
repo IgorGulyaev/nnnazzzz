@@ -60,8 +60,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="2156" column="13" selection-start-line="2156" selection-start-column="13" selection-end-line="2156" selection-end-column="13" />
+            <state relative-caret-position="106">
+              <caret line="2146" column="18" selection-start-line="2146" selection-start-column="18" selection-end-line="2146" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -261,12 +261,12 @@
       <workItem from="1475785584669" duration="1454000" />
       <workItem from="1476562309415" duration="8000" />
       <workItem from="1476562326406" duration="2216000" />
-      <workItem from="1488848444374" duration="7141000" />
+      <workItem from="1488848444374" duration="7393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105595000" />
+    <option name="totallyTimeSpent" value="105847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -451,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="2156" column="13" selection-start-line="2156" selection-start-column="13" selection-end-line="2156" selection-end-column="13" />
+        <state relative-caret-position="106">
+          <caret line="2146" column="18" selection-start-line="2146" selection-start-column="18" selection-end-line="2146" selection-end-column="18" />
           <folding />
         </state>
       </provider>
