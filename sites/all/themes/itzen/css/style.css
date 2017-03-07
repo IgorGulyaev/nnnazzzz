@@ -2086,10 +2086,42 @@ ul.social li a {
   cursor: default;
   text-decoration: none !important;
 }
+.node-project .group-project-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.node-project .group-project-top > div {
+  padding: 0 20px;
+}
+.node-project .group-project-top .field-name-field-project-date {
+  color: #5c595d;
+  font-size: 16px;
+}
+.node-project .group-project-top .field-name-field-project-type {
+  padding: 6px 9px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  background: rgba(255,255,255,0.06);
+  color: #a7a6a7;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .node-project .field-name-field-project-goto a {
-  display: block;
-  color: #ffe71e;
-  margin-top: 25px;
+  color: #198eff;
+  font-size: 16px;
 }
 .node-project .field-name-field-test .field-items {
   display: -webkit-box;
@@ -2107,8 +2139,10 @@ ul.social li a {
   align-items: center;
 }
 .node-project .field-name-field-test h2 {
+  margin: 0 0 0 21px;
   font-size: 15px;
   font-weight: 400;
+  white-space: nowrap;
 }
 .node-project .field-name-field-test h2 a {
   pointer-events: none !important;
@@ -2129,9 +2163,11 @@ ul.social li a {
   align-items: center;
 }
 .node-project .field-name-field-test .taxonomy-term img {
-  width: 22px;
+  width: 30px;
 }
-.node-project .field-name-field-test {}
+.node-project .field-name-field-project-image img {
+  display: inline-block;
+}
 .node-project {}
 /* END NODE PROJECT */
 
