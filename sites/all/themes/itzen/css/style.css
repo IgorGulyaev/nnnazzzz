@@ -450,7 +450,6 @@ nav.navbar {
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
 }
-.navbar-nav > li a:hover,
 .navbar-nav > li a:focus,
 .navbar-nav > li a:active {
   color: #ffe71e !important;
@@ -980,6 +979,11 @@ body.node-type-blog-item .region-content-bg {
   border-color: rgba(255,231,30,1);
   background-color: #ffe71e !important;
   color: #1f0a1f !important;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 #workNav > .owl-dot:before,
 #workNav > .owl-dot:after {
@@ -1009,6 +1013,14 @@ body.node-type-blog-item .region-content-bg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#workNav > .owl-dot:hover .label-number {
+  border-color: #198eff;
+  background-color: #198eff;
+}
+#workNav > .owl-dot:hover .label-text {
+  color: #198eff;
 }
 
 .view-how-we-work-tabs .view-header {
@@ -1529,6 +1541,15 @@ body.node-type-blog-item .region-content-bg {
   font-size: 28px;
   line-height: 38px;
   text-align: center;
+  webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.view-team.view-display-id-block .views-field-field-team-social li a:hover,
+.view-meet-our-team.view-display-id-block .views-field-field-member-social li a:hover {
+  background-color: #198eff;
 }
 .view-meet-our-team.view-display-id-block .ms-slide:not(.ms-sl-selected) {
 
@@ -1559,6 +1580,15 @@ body.node-type-blog-item .region-content-bg {
   color: #fff;
   font-size: 36px;
   opacity: 0.2;
+}
+
+.owl-prev:hover,
+.owl-next:hover,
+.bx-prev:hover,
+.bx-next:hover,
+.ms-nav-prev:hover,
+.ms-nav-next:hover {
+  color: #198eff;
 }
 
 .bx-wrapper {
@@ -1946,6 +1976,9 @@ footer a {
 }
 .view-projects .project-links .field-content:hover {
   background-color: #198eff;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 .view-projects .project-links .field-content:hover a {
   color: #fff;
@@ -2994,7 +3027,6 @@ ul.social li a:hover {
 .b24-widget-button-block .b24-widget-button-inner-block svg,
 .b24-widget-button-block .b24-widget-button-inner-block svg path {
   fill: #160616 !important;
-  background: #ffe71e !important;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
