@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dc67240-e0bb-48d3-a790-3b8d41579b5b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/itzen/css/style.css" afterPath="$PROJECT_DIR$/sites/all/themes/itzen/css/style.css" />
     </list>
     <ignored path="public_html.iws" />
@@ -60,8 +61,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="2665" column="3" selection-start-line="2665" selection-start-column="3" selection-end-line="2665" selection-end-column="3" />
+            <state relative-caret-position="709">
+              <caret line="2665" column="21" selection-start-line="2665" selection-start-column="21" selection-end-line="2665" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -261,12 +262,12 @@
       <workItem from="1475785584669" duration="1454000" />
       <workItem from="1476562309415" duration="8000" />
       <workItem from="1476562326406" duration="2216000" />
-      <workItem from="1488848444374" duration="9188000" />
+      <workItem from="1488848444374" duration="9946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107642000" />
+    <option name="totallyTimeSpent" value="108400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -459,8 +460,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/itzen/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="2665" column="3" selection-start-line="2665" selection-start-column="3" selection-end-line="2665" selection-end-column="3" />
+        <state relative-caret-position="709">
+          <caret line="2665" column="21" selection-start-line="2665" selection-start-column="21" selection-end-line="2665" selection-end-column="21" />
           <folding />
         </state>
       </provider>

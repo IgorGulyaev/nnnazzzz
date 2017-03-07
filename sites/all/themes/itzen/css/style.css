@@ -1999,6 +1999,9 @@ footer a {
   list-style: none;
   font-size: 18px;
 }
+.footer-toll .block-info ul li {
+  margin-bottom: -15px;
+}
 .block-info ul li i {
   margin-right: 14px;
   vertical-align: middle;
@@ -2650,7 +2653,7 @@ ul.social li a {
   /*.view-projects .view-content {
     margin-left: -20vw;
     width: 556px;
-  }*/
+  }*/.block-info ul li
   /*.view-projects .views-row {
     width: 278px;
   }*/
@@ -2658,6 +2661,10 @@ ul.social li a {
 @media (min-width: 501px) {
   .view-services.view-display-id-block_1 {
     display: none !important;
+  }
+  .footer-toll .block-info ul li {
+    margin-top: 35px;
+    margin-left: -10px;
   }
 }
 @media (max-width: 480px) {
