@@ -2441,6 +2441,9 @@ ul.social li a {
 }
 
 @media (max-width: 767px) {
+  .navbar .logo {
+    height: 80px;
+  }
   .container {
     width: 100%;
   }
@@ -2667,9 +2670,6 @@ ul.social li a {
   }
   .view-team.view-display-id-block .views-field-field-team-photo img {
     max-width: none;
-  }
-  .navbar .logo {
-    height: 80px;
   }
   .header-toll .icon-zen_contact_phone {
     display: none;
