@@ -2076,7 +2076,7 @@ ul.social li a {
 .node-project header h2,
 .node-project .field-name-field-project-milestone-title {
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   color: #ffe71e;
   font-size: 50px;
   font-weight: 300;
@@ -2100,9 +2100,10 @@ ul.social li a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 35px;
 }
 .node-project .group-project-top > div {
-  padding: 0 20px;
+  margin: 0 20px !important;
 }
 .node-project .group-project-top .field-name-field-project-date {
   color: #5c595d;
@@ -2165,8 +2166,23 @@ ul.social li a {
 .node-project .field-name-field-test .taxonomy-term img {
   width: 30px;
 }
+.node-project .field-name-field-project-image {
+  margin-top: 77px;
+}
 .node-project .field-name-field-project-image img {
   display: inline-block;
+}
+.node-project .field-name-body {
+  margin-bottom: 0;
+  color: #a7a6a7;
+  font-size: 20px;
+  font-weight: 300;
+}
+.node-project .field-name-field-project-notes {
+  margin-top: 8px;
+  color: #5c595d;
+  font-size: 16px;
+  font-weight: 300;
 }
 .node-project {}
 /* END NODE PROJECT */
