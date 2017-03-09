@@ -90,7 +90,7 @@
                                 <div class="inner-block">
                                     <a href="tel:+380994959282" class="toll-tel"><span><i class="icon-zen_contact_phone"></i> +38 099 </span>495 9282</a>
                                     <span>
-                                        <span class="toll-country"><?php print t('Ukraine'); ?></span>
+                                        <span class="toll-country"><?php print t('Kyiv, Ukraine'); ?></span>
                                         <!--<span class="toll-label"><?php /*print t('Toll Free'); */?></span>-->
                                     </span>
                                 </div>
