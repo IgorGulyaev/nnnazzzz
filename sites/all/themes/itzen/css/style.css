@@ -1554,6 +1554,11 @@ body.node-type-blog-item .region-content-bg {
 .view-team.view-display-id-block .views-field-field-team-social li a:hover,
 .view-meet-our-team.view-display-id-block .views-field-field-member-social li a:hover {
   background-color: #198eff;
+  color: #fff;
+}
+.view-team.view-display-id-block .views-field-field-team-social li a:hover i,
+.view-meet-our-team.view-display-id-block .views-field-field-member-social li a:hover i {
+  color: #fff;
 }
 .view-meet-our-team.view-display-id-block .ms-slide:not(.ms-sl-selected) {
 
