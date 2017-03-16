@@ -1779,7 +1779,7 @@ footer {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     footer {
-	  background-image: url("../images/bg_footer_2x.png");
+	  background-image: url("../images/bg_footer_2x.jpg");
 	}
 }
 footer .social li div {

@@ -38,12 +38,12 @@ a {
 }*/
 
 .region-header-bg {
-  background: url("../images/bg_header.png") no-repeat center center;
+  background: url("../images/bg_header.jpg") no-repeat center center;
   -webkit-background-size:auto 160vh;
   background-size:auto 160vh;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .region-header-bg {
-	  background-image: url("../images/bg_header_2x.png");
+	  background-image: url("../images/bg_header_2x.jpg");
 	}
 }
